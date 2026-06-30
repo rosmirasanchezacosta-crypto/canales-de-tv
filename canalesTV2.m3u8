@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:0 tvg-logo="https://www.appcreator24.com/srv/imgs/gen/3544498_ico.png",lamil35
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s",lamil35
 #EXTVLCOPT:network-caching=1000
 https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
 
