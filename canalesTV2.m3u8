@@ -857,3 +857,36 @@ https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:0 tvg-logo="https://www.cgtn.com/images/cgtn-logo.png";; group-title="Cine",CGTN Documentary
 #EXTVLCOPT:network-caching=1000
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/mCYp55sM/images-2.png";; group-title="Cine",HBO FAMILY
+#EXTVLCOPT:network-caching=1000
+https://s4.bufaloweb.com/bufalo16/tracks-v1a1/mono.ts.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/MxYNZmLZ/channels4-profile-2.jpg";; group-title="Cine",HBO CANAL
+#EXTVLCOPT:network-caching=1000
+https://s4.bufaloweb.com/bufalo15/tracks-v1a1/mono.ts.m3u8
+#EXTINF:0 tvg-logo="https://cdn.m3u.cl/logo/1152_UCV_2.png";; group-title="Música",UCV 2
+#EXTVLCOPT:network-caching=1000
+https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8?PlaylistM3UCL
+#EXTINF:0 tvg-logo="https://i.imgur.com/V6Kaqha.png";; group-title="Deportes",ACCDN
+#EXTVLCOPT:network-caching=1000
+https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
+#EXTINF:0 tvg-logo="https://www.appcreator24.com/srv/imgs/gen/3544498_ico.png";; group-title="Infantil",LAMIL35 TV
+#EXTVLCOPT:network-caching=1000
+https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/HQZQyWt.png";; group-title="Infantil",ADN TV+
+#EXTVLCOPT:network-caching=1000
+https://d3b73b34o7cvkq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gz2sgqzp076kf/adn.m3u8
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXaRs9Ti7_KN8qc4SvlFnX6e_4U_ENQ_Wbg&usqp=";; group-title="General",RCN FHD
+#EXTVLCOPT:network-caching=1000
+http://daleplaytv.vip/live/9C00D37FA543/D37FA5439C00/541557.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/9H7x85Y3/29938cae6727790a47491882e556fce7.png";; group-title="Cine",Paramount +
+#EXTVLCOPT:network-caching=1000
+http://daleplaytv.vip/live/9C00D37FA543/D37FA5439C00/317033.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/Dgkr31HT/Win-Sports-Plus-Premium.webp";; group-title="Deportes",WIN SPORT +
+#EXTVLCOPT:network-caching=1000
+http://23.153.217.158:8080/live/962401975tv1/h45ypxswj/359.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/JR8PFMFs/Win-Sports2022.png";; group-title="Deportes",WIN SPORT
+#EXTVLCOPT:network-caching=1000
+http://23.153.217.158:8080/live/962401975tv1/h45ypxswj/362.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/7xQ4nSQN/images-1.jpg";; group-title="General",NETFLIX
+#EXTVLCOPT:network-caching=1000
+http://18.228.238.198/tv/canal1.m3u8
