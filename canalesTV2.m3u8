@@ -16,7 +16,7 @@ https://s4.bufaloweb.com/bufalo6/tracks-v1a1/mono.ts.m3u8
 https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanescc-rakutenes/playlist.m3u8
 #EXTINF:0 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUM19KK4MkoRvZAEUJDIf9vtKPJjg7DNLMVm_MP9ew5aNuDNXfKhkcY3JPU7gTl29T97QWAE7d9BarxuT5_SPSCEjmaD45Gq55mz5vekeYABqFIwh3w7FO1IoMow_kzh1fcXUE3NRt_5f8oEVAiKfs_nLWTLYYgjQaWHCfiXAJvp3nSgeKwzeR7NL5qdk/w200-h200/descarga.png?raw=true";; group-title="General",BUM Televisión
 #EXTVLCOPT:network-caching=1000
-https://movil.ejeserver.com/live/visiondorada.m3u8
+https://canal-iptv.elpatiodelsabor-82.workers.dev/https://movil.ejeserver.com/live/visiondorada.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_9B_11_22D4_EEEE0000_0_0_0.png?raw=true";; group-title="General",MEGA FHD
 #EXTVLCOPT:network-caching=1000
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653406.m3u8
