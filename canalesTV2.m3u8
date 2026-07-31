@@ -880,7 +880,7 @@ https://d3b73b34o7cvkq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 http://daleplaytv.vip/live/9C00D37FA543/D37FA5439C00/541557.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/9H7x85Y3/29938cae6727790a47491882e556fce7.png";; group-title="Cine",Paramount +
 #EXTVLCOPT:network-caching=1000
-http://daleplaytv.vip/live/9C00D37FA543/D37FA5439C00/317033.m3u8
+http://23.131.184.46:8080/live/9C00D37FA543/D37FA5439C00/317033.m3u8?token=SElZVmROZHFvdTZEMXlP
 #EXTINF:0 tvg-logo="https://i.ibb.co/Dgkr31HT/Win-Sports-Plus-Premium.webp";; group-title="Deportes",WIN SPORT +
 #EXTVLCOPT:network-caching=1000
 http://23.153.217.158:8080/live/962401975tv1/h45ypxswj/359.m3u8
