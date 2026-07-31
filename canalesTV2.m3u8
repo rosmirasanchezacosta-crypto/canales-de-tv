@@ -2,7 +2,7 @@
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="General",lamil35
 #EXTVLCOPT:network-caching=1000
 https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="General",A&E Latin America
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="Cine",A&E Latin America
 #EXTVLCOPT:network-caching=1000
 http://138.121.15.230:9002/A&E/index.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vcr4J7HJeWoIYlFvb9SxQu-0hHIgeQqgVPPl_zpDSQ&s=10";; group-title="Deportes",ACCDN
@@ -872,3 +872,45 @@ https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8?
 #EXTINF:0 tvg-logo="https://i.imgur.com/V6Kaqha.png";; group-title="Deportes",ACCDN
 #EXTVLCOPT:network-caching=1000
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6a/Canal_Capital_logo.png" group-title="Colombia",Canal Capital
+#EXTVLCOPT:network-caching=1000
+http://138.121.15.230:9002/CANAL-CAPITAL/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Canal_Institucional_logo.png" group-title="Colombia",Canal Institucional
+#EXTVLCOPT:network-caching=1000
+https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/59/Canal_Uno_Logo.png" group-title="Colombia",Canal 1
+#EXTVLCOPT:network-caching=1000
+https://mdstrm.com/live-stream-playlist/5a5e1c2568b1910913db5fe2.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cablenoticias_logo.png" group-title="Colombia",Cablenoticias
+#EXTVLCOPT:network-caching=1000
+http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4e/Telecaribe_logo.png" group-title="Colombia",Telecaribe
+#EXTVLCOPT:network-caching=1000
+https://mediastream.telecaribe.co/live/TV/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7a/Teleantioquia_logo.png" group-title="Colombia",Teleantioquia
+#EXTVLCOPT:network-caching=1000
+https://live-edge.teleantioquia.co/live/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Canal_TRO_logo.png" group-title="Colombia",Canal TRO
+#EXTVLCOPT:network-caching=1000
+https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9d/Citytv_logo.png" group-title="Colombia",CityTV Bogotá
+#EXTVLCOPT:network-caching=1000
+http://138.121.15.230:9002/CITY-TV/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1e/Cosmovision_logo.png" group-title="Colombia",Cosmovisión
+#EXTVLCOPT:network-caching=1000
+https://lbgo.bozztv.com/ssh101/ssh101/Cosmovisi%C3%B3n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/Cristovision_logo.png" group-title="Colombia",Cristovisión
+#EXTVLCOPT:network-caching=1000
+https://5fc584f3f19c9.streamlock.net/cristovision/videocristovision/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3c/Telemedellin_logo.png" group-title="Colombia",Telemedellín
+#EXTVLCOPT:network-caching=1000
+https://streaming.telemedellin.tv/hls/stream.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0a/CNC_logo.png" group-title="Colombia",CNC Tulua
+#EXTVLCOPT:network-caching=1000
+https://live.amelbatv.co:81/cnctulualive/index.fmp4.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Canal_Congreso_logo.png" group-title="Colombia",Canal Congreso
+#EXTVLCOPT:network-caching=1000
+http://138.121.15.230:9002/CANAL-CONGRESO/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Blu_Radio_logo.png" group-title="Colombia",Blu Radio TV
+#EXTVLCOPT:network-caching=1000
+https://mdstrm.com/live-stream-playlist/58d1921a72e2b22e2905e493.m3u8
