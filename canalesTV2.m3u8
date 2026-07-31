@@ -949,7 +949,7 @@ http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52098.m3u8
 http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52100.m3u8
 #EXTINF:0 tvg-logo="https://i.imgur.com/MJzuRAN.png";; group-title="Colombia",RCN Más
 #EXTVLCOPT:network-caching=1000
-http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52107.m3u8
+http://213.193.255.179:8080/live/9C00D37FA543/D37FA5439C00/541557.m3u8?token=WU5Hc1BsbmxyYmNObXRh
 #EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/COkEO-FWL6Un57bQno1oDDZsiBeWCSjxPVZv0hLJ3dQLpwZ3rzIJ1FqdHyd8AvkNGo8GHc9HQwaMUlFk2ML57g.png";; group-title="Colombia",TELEISLAS
 #EXTVLCOPT:network-caching=1000
 http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52113.m3u8
