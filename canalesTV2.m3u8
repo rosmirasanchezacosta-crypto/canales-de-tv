@@ -887,6 +887,102 @@ http://23.153.217.158:8080/live/962401975tv1/h45ypxswj/359.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/JR8PFMFs/Win-Sports2022.png";; group-title="Deportes",WIN SPORT
 #EXTVLCOPT:network-caching=1000
 http://23.153.217.158:8080/live/962401975tv1/h45ypxswj/362.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/7xQ4nSQN/images-1.jpg";; group-title="General",NETFLIX
+#EXTINF:0 tvg-logo="https://i.ibb.co/7xQ4nSQN/images-1.jpg";; group-title="Cine",Saga Elite
 #EXTVLCOPT:network-caching=1000
 http://18.228.238.198/tv/canal1.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/tAMEysP4gkZCw5tGuBhL3LLwAOCM7Oe6-TC3wmpAxi4Fr_cFKkRtE5KK2l9p5Wv1_jwi6d0Rkrg4q2Egfl3zkuDn5l-q4tlMVbSH-L7qx6RI5J1Wx5RFVYJo7bB-nFyf.png";; group-title="Colombia",CANAL UNO
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52074.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/2312Luq.png";; group-title="Colombia",CAL
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52073.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/tAMEysP4gkZCw5tGuBhL3LLwAOCM7Oe6-TC3wmpAxi4Fr_cFKkRtE5KK2l9p5Wv1_jwi6d0Rkrg4q2Egfl3zkuDn5l-q4tlMVbSH-L7qx6T5Tb0N4j6Q1tq6i6urldJ1QxDrFzZv6mQTLKcfuHelwA.png";; group-title="Colombia",CANAL CAPITAL
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52075.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/COkEO-FWL6Un57bQno1oDDZsiBeWCSjxPVZv0hLJ3dQocxchMYDrFo05najUlWZpQZEZHOEiNoirXd5doJi-hw.png";; group-title="Colombia",CANAL TRO
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52078.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/COkEO-FWL6Un57bQno1oDDZsiBeWCSjxPVZv0hLJ3dQXDw_uk-3YG6wetwP-vonI1xkBBVnOddEq0x_IXYm-MA.png";; group-title="Colombia",CANAL INSTITUCIONAL
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52076.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPV0yIMKlxU4splwECV3BkHfPlemZ3xr7_wIsm0p4zGrS.png";; group-title="Colombia",CITY
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52079.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/Kanmk96vTt-hjZj_mC4RcPttLMlmeeoOsTOSXqs4fWXm360tfVL4n72DiGcqnmJjflZEMeiSHoxZ511Qqw8aJ51vV4kwKak-CAByOZnzUh_x9ntuN7Z9OMYl10sMpet01GGE3Eka5tecF1EQBcjcdHJ8eoYHUGGSAdUeMI8PB3E.png";; group-title="Colombia",Cable Noticias
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52080.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPRsoh_UFZ4QQcx6RUDUUCFUxmdw5pdcwSQCoWLdAHjWY.png";; group-title="Colombia",Cablenoticias
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52081.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/Kanmk96vTt-hjZj_mC4RcPttLMlmeeoOsTOSXqs4fWUtJVaZ7CzxjZrF_OpH44HZMlSV-QHj5G4k47f9jAyPPl-T0FDO9bMahIRdisXeiuYNZ6eVS5k0mWQySn9W4WCmHiB3fs7B95XnHM7CCRtulg.png";; group-title="Colombia",CARACOL
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52086.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPZ7ajn5pP7zF0OOAvBDeE1B2UTOx9fF4GoRN-K_N0Hw9.png";; group-title="Colombia",NTN
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52092.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPZ4sSYggz5t5hLR9_UuxVKwcxNPIl6yOMrIymKdMKLfa17accwyo3RLgMgNTVF9kaQ.png";; group-title="Colombia",CARACOL INT. ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52090.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPWSuD9YMTr_3tZDlno3_Qi6J37J1Z2-bqAH9Bn2S7DeA.png";; group-title="Colombia",PASIONES
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52093.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPdmZH2AlBoi3A3XkBG68oYw9U9necpdNsSG7yO2gzXnN.png";; group-title="Colombia",RCN
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52095.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPdmZH2AlBoi3A3XkBG68oYw9U9necpdNsSG7yO2gzXnN.png";; group-title="Colombia",RCN ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52096.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/Kanmk96vTt-hjZj_mC4RcPttLMlmeeoOsTOSXqs4fWUtJVaZ7CzxjZrF_OpH44HZMlSV-QHj5G4k47f9jAyPPl-T0FDO9bMahIRdisXeiuYNZ6eVS5k0mWQySn9W4WCmHiB3fs7B95XnHM7CCRtulg.png";; group-title="Colombia",Caracol ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52087.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/LphlRAeQ14Y38EmlerUCN9MjxDrm5ND22a9oqUWpDBEXs7DRKAtpvA6Yyri9jybCjUQPtOslihUgSdIPqFQRlUgYVQU3LE4r-MZWu2Rm9bc.jpg";; group-title="Colombia",RCN NUESTRA TELE
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52108.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/MJzuRAN.png";; group-title="Colombia",RCN Mas
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52109.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPW4d4h3y_NaBPqVzLVxZ6l73j4A_w54gFOLcrVl5KMAX.png";; group-title="Colombia",CO RCN Novelas
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52098.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/-kRhDmGtaRfxVEGEnqonPZWmIT5WmtRvbn46283Ax1MYUf4woikW-L341_pP9_vZ.png";; group-title="Colombia",Telepacifico
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52100.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/MJzuRAN.png";; group-title="Colombia",RCN Más
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52107.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/COkEO-FWL6Un57bQno1oDDZsiBeWCSjxPVZv0hLJ3dQLpwZ3rzIJ1FqdHyd8AvkNGo8GHc9HQwaMUlFk2ML57g.png";; group-title="Colombia",TELEISLAS
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52113.m3u8
+#EXTINF:0 tvg-logo="icono.png";; group-title="Colombia",SEÑAL COLOMBIA
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52116.m3u8
+#EXTINF:0 tvg-logo="http://digitaltvsv.com:80/images/tAMEysP4gkZCw5tGuBhL3LLwAOCM7Oe6-TC3wmpAxi4Fr_cFKkRtE5KK2l9p5Wv1_jwi6d0Rkrg4q2Egfl3zkq_7vg5qZVHVPyDLmMQLdT6Qt3laMWzxeuVsMMauKT0b.png";; group-title="Colombia",TU UNIVERSO
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52115.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/28XmS1J.png";; group-title="Colombia",TELECAFE
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52120.m3u8
+#EXTINF:0 tvg-logo="https://static.wixstatic.com/media/61a456_4286e3d98179404e9484ca04027d0c59~mv2.png/v1/fill/w_149,h_139,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TELECARIBE-LOGO-2023.png";; group-title="Colombia",COL TELECARIBE ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52198.m3u8
+#EXTINF:0 tvg-logo="https://imagenes.gatotv.com/logos/canales/claros/telepacifico-mediano.png";; group-title="Colombia",TELEPACIFICO ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52200.m3u8
+#EXTINF:0 tvg-logo="https://telemedellin.tv/wp-content/uploads/2018/07/logo_telemedellin.png";; group-title="Colombia",TELEMEDELLIN ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52201.m3u8
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/TV_Agro_logo.svg/1200px-TV_Agro_logo.svg.png";; group-title="Colombia",AGRO
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52202.m3u8
+#EXTINF:0 tvg-logo="https://i.imgur.com/MJzuRAN.png";; group-title="Colombia",RCN Mas ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52207.m3u8
+#EXTINF:0 tvg-logo="https://rtvcplay-v2.s3-accelerate.amazonaws.com/s3fs-public/field/logo/brands/logo-senal-colombia.png";; group-title="Colombia",24 SENAL COLOMBIA
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52209.m3u8
+#EXTINF:0 tvg-logo="https://www.tdtparatodos.tv/sites/default/files/la_kalle.png";; group-title="Colombia",33 LA KALLE ᴴᴰ
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/52212.m3u8
+#EXTINF:0 tvg-logo="https://logrospublicitarios.com/wp-content/uploads/2020/03/Untitled-5-300x300.png";; group-title="Colombia",TELECARIBE
+#EXTVLCOPT:network-caching=1000
+http://elpapanatas.space:8080/live/3mauric1206/XJQ7mmhZFf/346524.m3u8
