@@ -923,3 +923,6 @@ https://mdstrm.com/live-stream-playlist/58d1921a72e2b22e2905e493.m3u8
 #EXTINF:-1 tvg-logo="https://intalnet.com/assets/img/nuevologo.png" group-title="Colombia",INTALNET TV
 #EXTVLCOPT:network-caching=1000
 http://skynetmax.live:8080/live/Julio0592/tYNq2EP/946458.m3u8
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUG5pq-E-99G3H8MQyaotoKJ55sOldMaNyPhoU9ifQw&s" group-title="Colombia",TLC
+#EXTVLCOPT:network-caching=1000
+http://skynetmax.live:8080/live/Julio0592/tYNq2EP/784598.m3u8
