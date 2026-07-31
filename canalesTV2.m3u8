@@ -3,7 +3,7 @@
 #EXTVLCOPT:network-caching=1000
 https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/V6Kaqha.png" group-title="Deportes",ACCDN
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vcr4J7HJeWoIYlFvb9SxQu-0hHIgeQqgVPPl_zpDSQ&s=10" group-title="Deportes",ACCDN
 #EXTVLCOPT:network-caching=1000
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
 
