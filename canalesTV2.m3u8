@@ -878,7 +878,7 @@ https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvh1riYuEXF02vAQS5mwX6UBg0XqmTMgITZxk5YtzlQ&s=10.png" group-title="Colombia",Canal Capital
 #EXTVLCOPT:network-caching=1000
 https://mdstrm.com/live-stream-playlist/6952dc88cb62083467eb6ab4.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Canal_Institucional_logo.png" group-title="Colombia",Canal Institucional
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGlCo-l4ZgxOd8aqZFWoG5HWU1dHbg9NPcb2UZTnM5w&s=10.png" group-title="Colombia",Canal Institucional
 #EXTVLCOPT:network-caching=1000
 https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/59/Canal_Uno_Logo.png" group-title="Colombia",Canal 1
