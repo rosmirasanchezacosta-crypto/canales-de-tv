@@ -206,7 +206,7 @@ https://d2qsan2ut81n2k.cloudfront.net/live/77eece7f-8de5-4406-9f7e-7be16d81f2ce/
 #EXTINF:0 tvg-logo="https://i.ibb.co/1K5b2Z7/audaztv.png";; group-title="General",Audaz TV
 #EXTVLCOPT:network-caching=1000
 https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/3s888C9/aurorafilms.png";; group-title="Cine",Aurora Media Films
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvcksBYXUQYoHXJ1hnWKEotCtjzEH4WeKXUTUYPTY5A&s=10.png";; group-title="Cine",Aurora Media Films
 #EXTVLCOPT:network-caching=1000
 https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/australtv.png";; group-title="General",Austral TV
