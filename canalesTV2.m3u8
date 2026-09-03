@@ -883,7 +883,7 @@ https://mdstrm.com/live-stream-playlist/6952dc88cb62083467eb6ab4.m3u8
 https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2M8m8c5el5y-rLqeWNniOsPcdTOBoNGWbRu4eN2Q0iw&s=10.png" group-title="Colombia",Canal CNC Valledupar
 #EXTVLCOPT:network-caching=1000
-https://teleonline.org/canal/cnc-valledupar/
+https://live20.bozztv.com/akamaissh101/ssh101/cncvalledupar1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cablenoticias_logo.png" group-title="Colombia",Cablenoticias
 #EXTVLCOPT:network-caching=1000
 http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
