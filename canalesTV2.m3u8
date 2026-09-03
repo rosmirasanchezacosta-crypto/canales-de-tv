@@ -881,9 +881,9 @@ https://mdstrm.com/live-stream-playlist/6952dc88cb62083467eb6ab4.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGlCo-l4ZgxOd8aqZFWoG5HWU1dHbg9NPcb2UZTnM5w&s=10.png" group-title="Colombia",Canal Institucional
 #EXTVLCOPT:network-caching=1000
 https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/59/Canal_Uno_Logo.png" group-title="Colombia",Canal 1
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2M8m8c5el5y-rLqeWNniOsPcdTOBoNGWbRu4eN2Q0iw&s=10.png" group-title="Colombia",Canal CNC Valledupar
 #EXTVLCOPT:network-caching=1000
-https://mdstrm.com/live-stream-playlist/5a5e1c2568b1910913db5fe2.m3u8
+https://teleonline.org/canal/cnc-valledupar/
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cablenoticias_logo.png" group-title="Colombia",Cablenoticias
 #EXTVLCOPT:network-caching=1000
 http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
