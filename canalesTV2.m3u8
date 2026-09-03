@@ -875,7 +875,7 @@ https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8?
 #EXTINF:0 tvg-logo="https://i.imgur.com/V6Kaqha.png";; group-title="Deportes",ACCDN
 #EXTVLCOPT:network-caching=1000
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7KRqSwWYeEWQ32lCeL21FHPg13QlLiQ2q9qoPaKk1g&s=10" group-title="Colombia",Canal Capital
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvh1riYuEXF02vAQS5mwX6UBg0XqmTMgITZxk5YtzlQ&s=10.png" group-title="Colombia",Canal Capital
 #EXTVLCOPT:network-caching=1000
 https://mdstrm.com/live-stream-playlist/6952dc88cb62083467eb6ab4.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Canal_Institucional_logo.png" group-title="Colombia",Canal Institucional
@@ -889,7 +889,7 @@ https://mdstrm.com/live-stream-playlist/5a5e1c2568b1910913db5fe2.m3u8
 http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4e/Telecaribe_logo.png" group-title="Colombia",Telecaribe
 #EXTVLCOPT:network-caching=1000
-https://mediastream.telecaribe.co/live/TV/playlist.m3u8
+https://player.instantvideocloud.net/?autoplay=true#/embed/180720d1
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7a/Teleantioquia_logo.png" group-title="Colombia",Teleantioquia
 #EXTVLCOPT:network-caching=1000
 https://live-edge.teleantioquia.co/live/playlist.m3u8
