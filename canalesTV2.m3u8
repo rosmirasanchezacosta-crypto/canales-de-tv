@@ -875,7 +875,7 @@ https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8?
 #EXTINF:0 tvg-logo="https://i.imgur.com/V6Kaqha.png";; group-title="Deportes",ACCDN
 #EXTVLCOPT:network-caching=1000
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6a/Canal_Capital_logo.png" group-title="Colombia",Canal Capital
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7KRqSwWYeEWQ32lCeL21FHPg13QlLiQ2q9qoPaKk1g&s=10" group-title="Colombia",Canal Capital
 #EXTVLCOPT:network-caching=1000
 https://mdstrm.com/live-stream-playlist/6952dc88cb62083467eb6ab4.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Canal_Institucional_logo.png" group-title="Colombia",Canal Institucional
