@@ -877,7 +877,7 @@ https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8?
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6a/Canal_Capital_logo.png" group-title="Colombia",Canal Capital
 #EXTVLCOPT:network-caching=1000
-http://138.121.15.230:9002/CANAL-CAPITAL/index.m3u8
+https://mdstrm.com/live-stream-playlist/6952dc88cb62083467eb6ab4.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Canal_Institucional_logo.png" group-title="Colombia",Canal Institucional
 #EXTVLCOPT:network-caching=1000
 https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
@@ -923,6 +923,9 @@ https://mdstrm.com/live-stream-playlist/58d1921a72e2b22e2905e493.m3u8
 #EXTINF:-1 tvg-logo="https://intalnet.com/assets/img/nuevologo.png" group-title="Colombia",INTALNET TV
 #EXTVLCOPT:network-caching=1000
 http://skynetmax.live:8080/live/Julio0592/tYNq2EP/946458.m3u8
+#EXTINF:-1 tvg-logo="https://intalnet.com/assets/img/nuevologo.png" group-title="Colombia",Canal 14 Codazzi
+#EXTVLCOPT:network-caching=1000
+https://eu1.servers10.com:8081/8056/index.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUG5pq-E-99G3H8MQyaotoKJ55sOldMaNyPhoU9ifQw&s" group-title="Colombia",TLC
 #EXTVLCOPT:network-caching=1000
 http://skynetmax.live:8080/live/Julio0592/tYNq2EP/784598.m3u8
