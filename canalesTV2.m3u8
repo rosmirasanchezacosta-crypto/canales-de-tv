@@ -872,9 +872,6 @@ https://s4.bufaloweb.com/bufalo15/tracks-v1a1/mono.ts.m3u8
 #EXTINF:0 tvg-logo="https://cdn.m3u.cl/logo/1152_UCV_2.png";; group-title="Música",UCV 2
 #EXTVLCOPT:network-caching=1000
 https://unlimited1-cl-isp.dps.live/ucvtveventos/ucvtveventos.smil/playlist.m3u8?PlaylistM3UCL
-#EXTINF:0 tvg-logo="https://i.imgur.com/V6Kaqha.png";; group-title="Deportes",ACCDN
-#EXTVLCOPT:network-caching=1000
-https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvh1riYuEXF02vAQS5mwX6UBg0XqmTMgITZxk5YtzlQ&s=10.png" group-title="Colombia",Canal Capital
 #EXTVLCOPT:network-caching=1000
 https://mdstrm.com/live-stream-playlist/6952dc88cb62083467eb6ab4.m3u8
@@ -923,9 +920,6 @@ https://mdstrm.com/live-stream-playlist/58d1921a72e2b22e2905e493.m3u8
 #EXTINF:-1 tvg-logo="https://intalnet.com/assets/img/nuevologo.png" group-title="Colombia",INTALNET TV
 #EXTVLCOPT:network-caching=1000
 http://skynetmax.live:8080/live/Julio0592/tYNq2EP/946458.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKaxJUn8B-pE1vy-m-jIl5cXccmxssDdZsS1oOLUJElQ&s=10.png" group-title="Colombia",Canal 14 Codazzi
-#EXTVLCOPT:network-caching=1000
-https://eu1.servers10.com:8081/8056/index.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUG5pq-E-99G3H8MQyaotoKJ55sOldMaNyPhoU9ifQw&s" group-title="Colombia",TLC
 #EXTVLCOPT:network-caching=1000
 http://skynetmax.live:8080/live/Julio0592/tYNq2EP/784598.m3u8
@@ -1644,4 +1638,3 @@ https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/star_main_dvr_1080.m3u8
 https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_asia_main_dvr_1080.m3u8
 #EXTINF:-1 tvg-id="TVE_INTER.TV" tvg-name="TVE Int. Europa" tvg-logo="https://graph.facebook.com/tveInternacional/picture?width=200&height=200" group-title="España",TVE Int. Europa
 https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/int/tvei_eu_main_dvr_1080.m3u8
-
