@@ -2,12 +2,12 @@
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="General",lamil35
 #EXTVLCOPT:network-caching=1000
 https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/MVkp7T8/AE.png";; group-title="Cine",A&E Latin America
-#EXTVLCOPT:network-caching=1000
-http://138.121.15.230:9002/A&E/index.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vcr4J7HJeWoIYlFvb9SxQu-0hHIgeQqgVPPl_zpDSQ&s=10";; group-title="Deportes",ACCDN
 #EXTVLCOPT:network-caching=1000
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
+#EXTINF:0 tvg-logo="https://i.ibb.co/RpzCzmfk/i.png?raw=true";; group-title="Deportes",DGO+ SPORT
+#EXTVLCOPT:network-caching=1000
+https://s4.bufaloweb.com/bufalo11/tracks-v1a1/mono.ts.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/RpzCzmfk/i.png?raw=true";; group-title="Deportes",ESPN SPORTS
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo5/tracks-v1a1/mono.ts.m3u8
@@ -23,15 +23,6 @@ https://amg00627-amg00627c30-rakuten-es-3990.playouts.now.amagi.tv/playlist/amg0
 #EXTINF:0 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUM19KK4MkoRvZAEUJDIf9vtKPJjg7DNLMVm_MP9ew5aNuDNXfKhkcY3JPU7gTl29T97QWAE7d9BarxuT5_SPSCEjmaD45Gq55mz5vekeYABqFIwh3w7FO1IoMow_kzh1fcXUE3NRt_5f8oEVAiKfs_nLWTLYYgjQaWHCfiXAJvp3nSgeKwzeR7NL5qdk/w200-h200/descarga.png?raw=true";; group-title="General",BUM Televisión
 #EXTVLCOPT:network-caching=1000
 https://movil.ejeserver.com/live/visiondorada.m3u8
-#EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_9B_11_22D4_EEEE0000_0_0_0.png?raw=true";; group-title="General",MEGA FHD
-#EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653406.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8MAQz4wK7gET0FcinLnd-6IvBg6VWPZpFR0CxTY_Kw&s=10.png" group-title="Cine",BOM HD
-#EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653490.m3u8
-#EXTINF:0 tvg-logo="https://images.seeklogo.com/logo-png/22/2/somos-logo-png_seeklogo-229746.png";; group-title="Cine",SOMOS FHD
-#EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653491.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_9C44_9C40_22D4_EEEE0000_0_0_0.png?raw=true";; group-title="Infantil",CLAN TVE HD
 #EXTVLCOPT:network-caching=1000
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653578.m3u8
@@ -40,7 +31,7 @@ https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653578.m3u8
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653460.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_772E_416_1_C00000_0_0_0.png?raw=true";; group-title="Infantil",NICKELODEON HD
 #EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653576.m3u8
+https://s4.bufaloweb.com/bufalo20/tracks-v1a1/mono.ts.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_77C7_40A_1_C00000_0_0_0.png?raw=true";; group-title="Infantil",DREAMWORKS HD
 #EXTVLCOPT:network-caching=1000
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653570.m3u8
