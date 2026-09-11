@@ -68,22 +68,16 @@ https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/7X1C2k5/alcarrizostv.png";; group-title="General",Alcarrizos TV
 #EXTVLCOPT:network-caching=1000
 https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/5G0Y12V/alegretv.png";; group-title="General",Alegre TV RD
+#EXTINF:0 tvg-logo="https://i.ibb.co/5G0Y12V/alegretv.png";; group-title="Cine",Alegre TV RD
 #EXTVLCOPT:network-caching=1000
 https://streamunoapp.com:3149/live/alegretvlive.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/9v0F53F/dusttv.png";; group-title="Cine",Alien Nation by DUST
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89a3FOpEFolKMhlKomtuccRx0lZskSF4c1KY_s7bU8Q&s=10";; group-title="Cine",Alien Nation by DUST
 #EXTVLCOPT:network-caching=1000
 https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/L89kY32/alphachannel.png";; group-title="General",Alpha Channel
-#EXTVLCOPT:network-caching=1000
-https://5b01a3d32b65c.streamlock.net:1936/tvalpha/tvalpha/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/1K5b2Z7/atv28.png";; group-title="General",Alsacias Televisión (ATV  Canal 28)
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3z5fYrtvbiB8i-lxiEppQikxSPNEczB9KuJzjKsx0w&s=10";; group-title="Cine",Alsacias Televisión (ATV  Canal 28)
 #EXTVLCOPT:network-caching=1000
 https://s.emisoras.tv:8081/atv/index.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/alternatv.png";; group-title="General",Alterna TV
-#EXTVLCOPT:network-caching=1000
-https://tv.alterna.ar/stream/hls/live.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/23/Amazon_Sat_logo.png";; group-title="Cultura",Amazon Sat
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8cknNQ85mLvtVUcqBG4iMParzIXJ7AjENYWyIsiSgZA&s=10";; group-title="Cine",Amazon Sat
 #EXTVLCOPT:network-caching=1000
 https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/0y7x2XQ/ame47.png";; group-title="General",Ame 47
