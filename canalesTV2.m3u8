@@ -554,7 +554,7 @@ https://stream-207963.castr.net/65313d270e749722b6474684/live_2b589fc0dfbf11ee9c
 #EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/canal13yucatan.png";; group-title="General",Canal 13 Yucatán
 #EXTVLCOPT:network-caching=1000
 https://stream-207963.castr.net/65313d270e749722b6474684/live_4d3635d0dfbf11eeaae187cc1ffaf09b/index.fmp4.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/0y7x2XQ/canal14codazzi.png";; group-title="Colombia",Canal 14 Codazzi
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10";; group-title="Colombia",Canal 14 Codazzi
 #EXTVLCOPT:network-caching=1000
 https://eu1.servers10.com:8081/8056/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/27048QJ/canal14sancarlos.png";; group-title="General",Canal 14 San Carlos
