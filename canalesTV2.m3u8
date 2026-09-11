@@ -65,10 +65,10 @@ https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/7X1C2k5/alcarrizostv.png";; group-title="General",Alcarrizos TV
 #EXTVLCOPT:network-caching=1000
 https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/5G0Y12V/alegretv.png";; group-title="Cine",Alegre TV RD
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89a3FOpEFolKMhlKomtuccRx0lZskSF4c1KY_s7bU8Q&s=10";; group-title="Cine",Alegre TV RD
 #EXTVLCOPT:network-caching=1000
 https://streamunoapp.com:3149/live/alegretvlive.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89a3FOpEFolKMhlKomtuccRx0lZskSF4c1KY_s7bU8Q&s=10";; group-title="Cine",Alien Nation by DUST
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMW3m18hBONWHXV-nal7LNFqkblfms5OBGnlgnyoVTLQ&s=10";; group-title="Cine",Alien Nation by DUST
 #EXTVLCOPT:network-caching=1000
 https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3z5fYrtvbiB8i-lxiEppQikxSPNEczB9KuJzjKsx0w&s=10";; group-title="Cine",Alsacias Televisión (ATV  Canal 28)
