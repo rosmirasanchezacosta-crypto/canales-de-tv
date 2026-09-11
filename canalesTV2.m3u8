@@ -26,9 +26,6 @@ https://movil.ejeserver.com/live/visiondorada.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_9C44_9C40_22D4_EEEE0000_0_0_0.png?raw=true";; group-title="Infantil",CLAN TVE HD
 #EXTVLCOPT:network-caching=1000
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653578.m3u8
-#EXTINF:0 tvg-logo="https://blogger.googleusercontent.com/img/a/AVvXsEhP5_FhgK4QZkWWIQEt6uJuFPYRnYe8PhxOd49zkVKXzl4WV7Z4_uP06rSV7FpYRG1nxJ5-oL2wzHTgj_G1-JnAdzbSO6v2mVYc9hb4RgPnV3eER7M4qWyfKy2lrDhuV0YYiRbjeX02LtAxJbB3JjAhXddRlOXvczONno0Cdriz0r-hWVe7jqbxkrZMyhI?raw=true";; group-title="Cine",STAR HD
-#EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653460.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_772E_416_1_C00000_0_0_0.png?raw=true";; group-title="Infantil",NICKELODEON HD
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo20/tracks-v1a1/mono.ts.m3u8
@@ -95,13 +92,13 @@ https://video.makrodigital.com/americaestereoquito/americaestereoquito/playlist.
 #EXTINF:0 tvg-logo="https://i.ibb.co/27048QJ/americaestereo.png";; group-title="Música",América Estéreo Tulcán
 #EXTVLCOPT:network-caching=1000
 https://video.makrodigital.com/americaestereotulcan/americaestereotulcan/playlist.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4c/Am%C3%A9rica_TeV%C3%A9_logo.png";; group-title="General",América TeVé
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM2YAboufL0aPx7CzhiZMq2GJoRZvXsohOwm2zb9R2WQ&s=10";; group-title="General",América TeVé
 #EXTVLCOPT:network-caching=1000
 https://live.gideo.video/americateve2/master.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7b/Am%C3%A9rica_TV_%28Argentina%29_logo_2023.png";; group-title="General",America TV
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7b/Am%C3%A9rica_TV_%28Argentina%29_logo_2023.png";; group-title="Religión",America TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=1000
-#EXTINF:0 tvg-logo="https://i.ibb.co/6PZ819S/amigostv.png";; group-title="General",Amigos TV Chiquimula
+#EXTINF:0 tvg-logo="https://i.ibb.co/6PZ819S/amigostv.png";; group-title="Religión",Amigos TV Chiquimula
 #EXTVLCOPT:network-caching=1000
 https://antmedia.cablevisionrobles.com:5443/LiveApp/streams/CqwAgRagMvBNYN8c1731608980342.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/AMX_Noticias_logo.png";; group-title="Noticias",AMX Noticias
@@ -170,12 +167,6 @@ http://186.121.206.197/live/daniel/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/6PZ819S/atntelevision.png";; group-title="General",ATN Televisión
 #EXTVLCOPT:network-caching=1000
 https://streaming5.globalhostla.com/rtplive/atntelevision/playlist.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/70/Atrescine_logo.png";; group-title="Cine",Atrescine
-#EXTVLCOPT:network-caching=1000
-http://181.114.57.246:4000/play/KgkA9tT2SpLYm86J/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/07/Atreseries_logo.png";; group-title="Cine",Atreseries Internacional
-#EXTVLCOPT:network-caching=1000
-http://38.183.182.166:8000/play/a104/index.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/ATV_Per%C3%BA_logo.png";; group-title="General",ATV
 #EXTVLCOPT:network-caching=1000
 https://d2qsan2ut81n2k.cloudfront.net/live/25046411-8673-4dec-8ae8-5b41984f34e1/ts:abr.m3u8
@@ -191,9 +182,6 @@ https://d2qsan2ut81n2k.cloudfront.net/live/77eece7f-8de5-4406-9f7e-7be16d81f2ce/
 #EXTINF:0 tvg-logo="https://i.ibb.co/1K5b2Z7/audaztv.png";; group-title="General",Audaz TV
 #EXTVLCOPT:network-caching=1000
 https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvcksBYXUQYoHXJ1hnWKEotCtjzEH4WeKXUTUYPTY5A&s=10.png";; group-title="Cine",Aurora Media Films
-#EXTVLCOPT:network-caching=1000
-https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/australtv.png";; group-title="General",Austral TV
 #EXTVLCOPT:network-caching=1000
 https://stmv3.voxtvhd.com.br/australtv/australtv/playlist.m3u8
@@ -266,9 +254,6 @@ https://mlb.essastream.com:8081/bebetotelevision/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/27048QJ/bellavision.png";; group-title="General",Bellavision
 #EXTVLCOPT:network-caching=1000
 https://fox.hostlagarto.com:8081/bellavision8hd/tracks-v1a1/mono.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/7X1C2k5/bestclasicos.png";; group-title="Cine",BestClasicosTV
-#EXTVLCOPT:network-caching=1000
-https://acceso.mediosdecostarica.com:3873/multi_live/play.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/5G0Y12V/bhtv.png";; group-title="Música",BHTV
 #EXTVLCOPT:network-caching=1000
 https://sc1.wasidata.com/Bhtv/index.fmp4.m3u8
@@ -1490,24 +1475,6 @@ https://directes-tv-cat.3catdirectes.cat/live-content/canal324-hls/master.m3u8
 https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-bmo0niz694whx.m3u8
 #EXTINF:-1 tvg-id="ElPais.TV" tvg-name="El País" tvg-logo="https://graph.facebook.com/elpais/picture?width=200&height=200" group-title="Noticias",El País
 https://d2epgk1fomaa1g.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-9n8y4tw0bk3an/live/fast-channel-el-pais/fast-channel-el-pais.m3u8
-#EXTINF:-1 tvg-id="Euronews.TV" tvg-name="Euronews" tvg-logo="https://graph.facebook.com/es.euronews/picture?width=200&height=200" group-title="Noticias",Euronews
-https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiMDA0YjY0NTMtYjY2MC00ZTZkLTlkNzEtMTk3YTM3ZDZhZWIxIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjoxfQ==/26034/euronews-es.m3u8
-#EXTINF:-1 tvg-id="Negocios.TV" tvg-name="Negocios TV" tvg-logo="https://graph.facebook.com/Negociostele/picture?width=200&height=200" group-title="Noticias",Negocios TV
-https://negociostv-negociostv-samsunges.amagi.tv/hls/amagi_hls_data_negociost-negociostv-samsunges/CDN/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVE_PopUp.TV" tvg-name="Al cielo con ella (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Cine",Al cielo con ella (RTVE)
-https://ztnr.rtve.es/ztnr/16862827.m3u8
-#EXTINF:-1 tvg-id="RTVE_Cocina.TV" tvg-name="Cocina (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Cine",Cocina (RTVE)
-https://ztnr.rtve.es/ztnr/16656232.m3u8
-#EXTINF:-1 tvg-id="RTVE_Cuentame.TV" tvg-name="Cuéntame (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Cine",Cuéntame (RTVE)
-https://ztnr.rtve.es/ztnr/6909843.m3u8
-#EXTINF:-1 tvg-id="RTVE_En_Play.TV" tvg-name="En Play (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Cine",En Play (RTVE)
-https://ztnr.rtve.es/ztnr/17017351.m3u8
-#EXTINF:-1 tvg-id="RTVE_Promesa.TV" tvg-name="La Promesa (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Cine",La Promesa (RTVE)
-https://ztnr.rtve.es/ztnr/2472039.m3u8
-#EXTINF:-1 tvg-id="RTVE_Epoca.TV" tvg-name="La Revuelta (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Cine",La Revuelta (RTVE)
-https://ztnr.rtve.es/ztnr/16464388.m3u8
-#EXTINF:-1 tvg-id="RTVE_SomosCine.TV" tvg-name="Somos Cine (RTVE)" tvg-logo="https://graph.facebook.com/rtveplay/picture?width=200&height=200" group-title="Cine",Somos Cine (RTVE)
-https://ztnr.rtve.es/ztnr/6909845.m3u8
 #EXTINF:-1 tvg-name="+24" tvg-logo="https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg" group-title="Eventos",+24
 https://ztnr.rtve.es/ztnr/6108696.m3u8
 #EXTINF:-1 tvg-name="Canal Parlamento" tvg-logo="https://graph.facebook.com/CongresodelosDiputados/picture?width=200&height=200" group-title="Eventos",Canal Parlamento
