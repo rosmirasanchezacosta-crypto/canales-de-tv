@@ -50,19 +50,13 @@ https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653436.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_746E_3F0_1_C00000_0_0_0.png?raw=true";; group-title="Cine",M+ DRAMA HD
 #EXTVLCOPT:network-caching=1000
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653448.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/68037j9/ahoratv.png";; group-title="General",Ahora TV
-#EXTVLCOPT:network-caching=1000
-https://tv.livestreaminggroup.info:3513/live/canal35live.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/3s888C9/aiontv.png";; group-title="General",AION TV
-#EXTVLCOPT:network-caching=1000
-https://mlb.essastream.com:8081/aiontelevision/tracks-v1a1/mono.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/2k1V6vG/airedesantafe.png";; group-title="Noticias",Aire de Santa Fe
 #EXTVLCOPT:network-caching=1000
 https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Al_Jazeera_English_%28logo%29.svg/512px-Al_Jazeera_English_%28logo%29.svg.png";; group-title="Noticias",Al Jazeera English
 #EXTVLCOPT:network-caching=1000
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/7X1C2k5/alcarrizostv.png";; group-title="General",Alcarrizos TV
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSK_ttGYacI3cRrurz4GixiNdBXEC_5f67uJAjd7w24A&s=10.png";; group-title="General",Alcarrizos TV
 #EXTVLCOPT:network-caching=1000
 https://5790d294af2dc.streamlock.net/alcarrizostv/alcarrizostv/playlist.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89a3FOpEFolKMhlKomtuccRx0lZskSF4c1KY_s7bU8Q&s=10";; group-title="Cine",Alegre TV RD
@@ -77,7 +71,7 @@ https://s.emisoras.tv:8081/atv/index.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8cknNQ85mLvtVUcqBG4iMParzIXJ7AjENYWyIsiSgZA&s=10";; group-title="Cine",Amazon Sat
 #EXTVLCOPT:network-caching=1000
 https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/0y7x2XQ/ame47.png";; group-title="General",Ame 47
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_yOE77lHIIzS2pESXqfEkBC-R9jayJoonrvCLTPCcjA&s=10.png";; group-title="General",Ame 47
 #EXTVLCOPT:network-caching=1000
 https://ss2.tvrdomi.com:1936/ame47/ame47/playlist.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/27048QJ/americaestereo.png";; group-title="Música",América Estéreo Guayaquil
@@ -104,39 +98,21 @@ https://antmedia.cablevisionrobles.com:5443/LiveApp/streams/CqwAgRagMvBNYN8c1731
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/98/AMX_Noticias_logo.png";; group-title="Noticias",AMX Noticias
 #EXTVLCOPT:network-caching=1000
 https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/5G7J1Kq/antarestv.png";; group-title="General",Antares Televisión
-#EXTVLCOPT:network-caching=1000
-https://5c3fb01839654.streamlock.net:1963/iptvantares/liveantarestv/playlist.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/91/Antena_3_Internacional_logo.png";; group-title="General",Antena 3 Internacional
-#EXTVLCOPT:network-caching=1000
-http://177.10.184.193:8000/play/a06a/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1a/Antena_7_logo.png";; group-title="General",Antena 7
-#EXTVLCOPT:network-caching=1000
-https://d3mhrz6vhsrmmq.cloudfront.net/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/92/Antena_21_logo.png";; group-title="General",Antena 21
-#EXTVLCOPT:network-caching=1000
-https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/7jX4K2m/antenaseis.png";; group-title="General",Antena Seis TV
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwii4y78kUhtns2WOqANuIYrtDQjMlkREHtMyQrTMbkw&s=10.png";; group-title="General",Antena Seis TV
 #EXTVLCOPT:network-caching=1000
 https://video1.azulstream.com:8081/antenaseistv/index.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/4gV8hK2/antenasur.png";; group-title="General",Antena SUR
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwj2WLpiNLyP_dLJwcsM-Qk6Tt4C53q8VTf2Sr-tbPjA&s.png";; group-title="General",Antena SUR
 #EXTVLCOPT:network-caching=1000
 https://cloudpro.servidoresdestream.com:8081/8010/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/9V91K1C/antenauno.png";; group-title="Radio",Antena Uno RadioVideo
 #EXTVLCOPT:network-caching=1000
 https://tvdatta.com:3578/live/antenaunolive.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d1/Antofagasta_TV_logo.png";; group-title="General",Antofagasta TV (ATV)
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4LOOlauCDfahdn5Mz9BvOWkmDgpdCRZHwq-xb8Jn3NA&s=10.png";; group-title="General",Antofagasta TV (ATV)
 #EXTVLCOPT:network-caching=1000
 https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/3s888C9/anzoateguitv.png";; group-title="General",Anzoátegui TV
-#EXTVLCOPT:network-caching=1000
-https://vcp2.myplaytv.com/anzoateguitv/anzoateguitv/playlist.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/87/Argentinisima_Satelital_logo.png";; group-title="Música",Argentinísima Satelital
 #EXTVLCOPT:network-caching=1000
 https://stream1.sersat.com/hls/argentinisima.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/Arica_TV_logo.png";; group-title="General",Arica TV
-#EXTVLCOPT:network-caching=1000
-https://5eff35271151c.streamlock.net:1936/8002/8002/playlist.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/52/Arirang_TV_logo.png";; group-title="Cultura",Arirang TV UN
 #EXTVLCOPT:network-caching=1000
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
@@ -146,55 +122,28 @@ https://streamtv.as3sport.online:3394/hybrid/play.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/5G7J1Kq/asisucede.png";; group-title="Noticias",Así Sucede Guanajuato
 #EXTVLCOPT:network-caching=1000
 https://stream.oursnetworktv.com/latin/encoder13/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/1K5b2Z7/asiritv.png";; group-title="General",AsiriTV
-#EXTVLCOPT:network-caching=1000
-https://video2.lhdserver.es/asiritv/live.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/4gV8hK2/asomavision.png";; group-title="General",Asomavisión
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPPNvYAAXFmw3ld5t3327gKj6AkJUGRe4gHf9MI1M3Q&s=10.png";; group-title="General",Asomavisión
 #EXTVLCOPT:network-caching=1000
 https://asomatv.cloud-ip.cc/livestream/stream.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/27048QJ/atabaltv.png";; group-title="General",Atabal TV
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14DMEzZc8he-MPcQj5VOE3EJ9AnqkAjPjHpLqLLQ84w&s=10.png";; group-title="General",Atabal TV
 #EXTVLCOPT:network-caching=1000
 https://vdopanel.jlahozconsulting.com:3648/live/atabaltvlive.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/7jX4K2m/atacamanoticias.png";; group-title="Noticias",Atacama Noticias
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVtYNE-oP4Q3xqwfcI8F0fu2m_5v3A-H4Gq0RPZST6ug&s=10.png";; group-title="Noticias",Atacama Noticias
 #EXTVLCOPT:network-caching=1000
 https://v2.tustreaming.cl/atacamanoticias/index.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/7jX4K2m/atacamanoticias.png";; group-title="General",Atacama TV (Copiapó)
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi9v377n-A5yFbltng8BdYlXNaelSDhpxW5eGsqvmHwA&s=10.png";; group-title="General",Atacama TV (Copiapó)
 #EXTVLCOPT:network-caching=1000
 https://v2.tustreaming.cl/atacamatv/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7b/ATB_Bolivia_logo.png";; group-title="General",ATB La Paz
-#EXTVLCOPT:network-caching=1000
-http://186.121.206.197/live/daniel/index.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/6PZ819S/atntelevision.png";; group-title="General",ATN Televisión
-#EXTVLCOPT:network-caching=1000
-https://streaming5.globalhostla.com/rtplive/atntelevision/playlist.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/ATV_Per%C3%BA_logo.png";; group-title="General",ATV
-#EXTVLCOPT:network-caching=1000
-https://d2qsan2ut81n2k.cloudfront.net/live/25046411-8673-4dec-8ae8-5b41984f34e1/ts:abr.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/ATV_Per%C3%BA_logo.png";; group-title="General",ATV Argentina
-#EXTVLCOPT:network-caching=1000
-https://tv.streaming.com.bo/atvargentina/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/ATV_Per%C3%BA_logo.png";; group-title="General",ATV Sur
-#EXTVLCOPT:network-caching=1000
-https://alba-pe-atv-atvsur.stream.mediatiquestream.com/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/ATV_Per%C3%BA_logo.png";; group-title="General",ATV+
-#EXTVLCOPT:network-caching=1000
-https://d2qsan2ut81n2k.cloudfront.net/live/77eece7f-8de5-4406-9f7e-7be16d81f2ce/ts:abr.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/1K5b2Z7/audaztv.png";; group-title="General",Audaz TV
-#EXTVLCOPT:network-caching=1000
-https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/australtv.png";; group-title="General",Austral TV
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNPzZ7PVCwEFUtzu3KN9f3YhOEPZ3FQKWQVw4finW_g&s=10.png";; group-title="General",Austral TV
 #EXTVLCOPT:network-caching=1000
 https://stmv3.voxtvhd.com.br/australtv/australtv/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/27048QJ/autenticatv.png";; group-title="General",Auténtica Televisión
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeW93IVFF7UE35yKlyXPOoBQ4Ewx-_ESsUx4rXzyBNeQ&s=10.png";; group-title="General",Auténtica Televisión
 #EXTVLCOPT:network-caching=1000
 https://live.obslivestream.com/autenticatvmux/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/7X1C2k5/awapasports.png";; group-title="Deportes",Awapa Sports TV
 #EXTVLCOPT:network-caching=1000
 https://mgv-awapa.akamaized.net/hls/live/2104282/MGV_CHANNEL15/master.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/5G0Y12V/awtv.png";; group-title="General",AWTV
-#EXTVLCOPT:http-referrer=https://awtv.com.br
-#EXTVLCOPT:network-caching=1000
-#EXTINF:0 tvg-logo="https://i.ibb.co/6PZ819S/aysentv.png";; group-title="General",Aysen TV
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gXQl-rHKK8e3CyWw_Fiapd6OmFd2K5SI9aVmdxIOtQ&s=10.png";; group-title="General",Aysen TV
 #EXTVLCOPT:network-caching=1000
 https://v1.tustreaming.cl/aysentv/index.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/9v0F53F/azaharesfm.png";; group-title="Radio",Azahares Radio Multimedia
@@ -203,19 +152,10 @@ https://streamyes.alsolnet.com/azaharesfm/live/playlist.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/L89kY32/aznewstv.png";; group-title="Noticias",Azerbaijan News TV
 #EXTVLCOPT:network-caching=1000
 https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/Azteca_7_logo.png";; group-title="General",Azteca 7
-#EXTVLCOPT:network-caching=1000
-https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/Azteca_7_logo.png";; group-title="General",Azteca Honduras
-#EXTVLCOPT:network-caching=1000
-https://dvrfl03.bozztv.com/hondu-azteca/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/Azteca_7_logo.png";; group-title="General",Azteca Internacional
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rmJNLe_bq2kZrv8Q062hwz-4s4rRngj0-WvkWgnmbg&s=10.png";; group-title="General",Azteca Internacional
 #EXTVLCOPT:network-caching=1000
 https://azt-mun.otteravision.com/azt/mun/mun.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3a/Azteca_Uno_logo.png";; group-title="General",Azteca Uno
-#EXTVLCOPT:network-caching=1000
-https://mdstrm.com/live-stream-playlist/609b243156cca108312822a6.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/b15fresnillo.png";; group-title="General",B15 Fresnillo
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEBMXpmjwFwjHkUK78749z3ZT1wR2ybh-hKy0z5hyHA&s=10.png";; group-title="General",B15 Fresnillo
 #EXTVLCOPT:network-caching=1000
 https://s5.mexside.net:1936/lsac/lsac/playlist.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/b15fresnillo.png";; group-title="General",B15 Zacatecas
@@ -599,9 +539,6 @@ https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTbGFG8W4uJ-kyvc9Fx4L_ltrrKT2uDGcwXWfCLSJ2Fg&s=10.png";; group-title="Noticias",Canal 26 Aguascalientes
 #EXTVLCOPT:network-caching=1000
 https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/9v0F53F/canal26iap.png";; group-title="Noticias",Canal 26 TV IAP
-#EXTVLCOPT:network-caching=1000
-https://vdo.tecnoservix.stream:3899/live/canal26tvlive.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/L89kY32/canal28.png";; group-title="General",Canal 28
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_bf24d4208d8611eeb116dbe87aa63be0
 #EXTVLCOPT:network-caching=1000
