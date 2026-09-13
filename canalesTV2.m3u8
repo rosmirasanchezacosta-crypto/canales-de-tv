@@ -596,7 +596,7 @@ https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4lwTZEao9pV43lNSnHv5upimgd4g5Ynr4JommFnm4_g&s=10.png";; group-title="Noticias",Canal 26
 #EXTVLCOPT:network-caching=1000
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/5G0Y12V/canal26ags.png";; group-title="Noticias",Canal 26 Aguascalientes
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTbGFG8W4uJ-kyvc9Fx4L_ltrrKT2uDGcwXWfCLSJ2Fg&s=10.png";; group-title="Noticias",Canal 26 Aguascalientes
 #EXTVLCOPT:network-caching=1000
 https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/9v0F53F/canal26iap.png";; group-title="Noticias",Canal 26 TV IAP
@@ -752,7 +752,7 @@ https://stream.oursnetworktv.com/latin/Visof/playlist.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Canal%2B_logo.svg/320px-Canal%2B_logo.svg.png";; group-title="Internacional",Canal+ Haiti
 #EXTVLCOPT:network-caching=1000
 https://vdo.pro-fhi.net:3605/live/dgenlcpmlive.m3u8
-#EXTINF:0 tvg-logo="https://www.canal26.com/img/logo.png";; group-title="Noticias",Canalda 26 HD
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn7-t6RL7INbYPRIplJeJFcCpz1Bm7p3FWgRcb1QojTw&s=10.png";; group-title="Noticias",Canalda 26 HD
 #EXTVLCOPT:network-caching=1000
 https://canalda.rgradio.net:3084/live/canaldalive.m3u8
 #EXTINF:0 group-title="General",Cananga TV
