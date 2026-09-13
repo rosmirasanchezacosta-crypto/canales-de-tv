@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3UF
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="General",lamil35
 #EXTVLCOPT:network-caching=1000
 https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
@@ -788,7 +788,7 @@ https://live20.bozztv.com/akamaissh101/ssh101/cncvalledupar1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cablenoticias_logo.png" group-title="Colombia",Cablenoticias
 #EXTVLCOPT:network-caching=1000
 http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4e/Telecaribe_logo.png" group-title="Colombia",Telecaribe
+#EXTINF:-1 tvg-logo="https://graph.facebook.com/telecaribeEnvivo/picture?width=200&height=200.png" group-title="Colombia",Telecaribe
 #EXTVLCOPT:network-caching=1000
 https://player.instantvideocloud.net/?autoplay=true#/embed/180720d1
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7a/Teleantioquia_logo.png" group-title="Colombia",Teleantioquia
@@ -1331,10 +1331,6 @@ https://5940924978228.streamlock.net/j_Directo2/j_Directo2/playlist.m3u8
 https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8
 #EXTINF:-1 tvg-name="Xunta de Galicia" tvg-logo="https://graph.facebook.com/@xuntadegalicia/picture?width=200&height=200" group-title="España",Xunta de Galicia
 https://xuntalive.akamaized.net/hls/live/2032287/streamxunta/master.m3u8
-#EXTINF:-1 tvg-name="Canal Telecaribe Colombia" tvg-logo="https://graph.facebook.com/telecaribeEnvivo/picture?width=200&height=200" group-title="Colombia",Canal Telecaribe Colombia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta118.cdnmedia.tv/telecaribetvlive/smil:rtmp01.smil/playlist.m3u8?DVR
 #EXTINF:-1 tvg-name="Canal TRO Colombia" tvg-logo="https://graph.facebook.com/canaltro/picture?width=200&height=200" group-title="Colombia",Canal TRO Colombia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
