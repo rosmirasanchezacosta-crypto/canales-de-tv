@@ -1409,10 +1409,6 @@ https://senadolive.akamaized.net/hls/live/2006551/punto1/master.m3u8
 https://hola-play-2108fd06-86d4-44e8-9867-c35b4895a1c1-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6433/master.m3u8
 #EXTINF:-1 tvg-name="+tdp" tvg-logo="https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200" group-title="Deportes",+tdp
 https://ztnr.rtve.es/ztnr/6712432.m3u8
-#EXTINF:-1 tvg-id="E3.TV" tvg-name="Esport3" tvg-logo="https://graph.facebook.com/Esport3/picture?width=200&height=200" group-title="Deportes",Esport3 GEO
-https://directes-tv-es.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
-#EXTINF:-1 tvg-id="E3.TV" tvg-name="Esport3" tvg-logo="https://graph.facebook.com/Esport3/picture?width=200&height=200" group-title="Deportes",Esport3 GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
 #EXTINF:-1 tvg-id="ETBD.TV" tvg-name="ETB Deportes (Kirolak 360)" tvg-logo="https://graph.facebook.com/deportes.eitb.kirolak/picture?width=200&height=200" group-title="Deportes",ETB Deportes (Kirolak 360)
 #EXTVLCOPT:http-referrer=https://kirolakeitb.eus/es/kirolak-360/en-directo/
 https://multimedia.eitb.eus/live-content/oka1hd-hls/master.m3u8
