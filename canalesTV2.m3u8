@@ -8,7 +8,7 @@ https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBK2ySTBkFytKHIyDwLChkvdMUUt7KZ-c64qC2vaix1Q&s=10";; group-title="Deportes",DGO+ SPORT
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo11/tracks-v1a1/mono.ts.m3u8
-#EXTINF:0 tvg-logo="https://i.ibb.co/RpzCzmfk/i.png?raw=true";; group-title="Deportes",ESPN SPORTS
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-oYa8QTkPgFenwTJM6AHCMOjXC-6G-MQZSDdwid2AUA&s=10.png?raw=true";; group-title="Deportes",ESPN SPORTS
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo5/tracks-v1a1/mono.ts.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/RpzCzmfk/i.png?raw=true";; group-title="Deportes",ESPN 2
