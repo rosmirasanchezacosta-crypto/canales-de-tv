@@ -1,4 +1,4 @@
-#EXTM3UF
+#EXTM3UFF
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="General",lamil35
 #EXTVLCOPT:network-caching=1000
 https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
@@ -877,14 +877,6 @@ https://ztnr.rtve.es/ztnr/4952053.m3u8
 https://streaming.28kanala.eus/hls/z.m3u8
 #EXTINF:-1 tvg-id="C33.TV" tvg-name="33" tvg-logo="https://graph.facebook.com/Canal33/picture?width=200&height=200" group-title="España",33 GEO
 https://directes-tv-es.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8
-#EXTINF:-1 tvg-id="C33.TV" tvg-name="33" tvg-logo="https://graph.facebook.com/Canal33/picture?width=200&height=200" group-title="España",33 GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8
-#EXTINF:-1 tvg-name="33TV" tvg-logo="https://graph.facebook.com/33Television/picture?width=200&height=200" group-title="España",33TV
-https://limited43.todostreaming.es/live/simbana-livestream.m3u8
-#EXTINF:-1 tvg-name="3Cat Anime" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Anime GEO
-https://directes-tv-es.3catdirectes.cat/live-content/tem2-hls/master.m3u8
-#EXTINF:-1 tvg-name="3Cat Anime" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Anime GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/tem2-hls/master.m3u8
 #EXTINF:-1 tvg-name="3Cat Càmeres del temps" tvg-logo="https://graph.facebook.com/3CatInfoElTemps/picture?width=200&height=200" group-title="España",3Cat Càmeres del temps
 https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
 #EXTINF:-1 tvg-name="3Cat Càmeres del temps" tvg-logo="https://graph.facebook.com/3CatInfoElTemps/picture?width=200&height=200" group-title="España",3Cat Càmeres del temps GEO
