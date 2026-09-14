@@ -1420,8 +1420,6 @@ https://stream1.sersat.com/hls/garagetv.m3u8
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 #EXTINF:-1 tvg-id="TDP.TV" tvg-name="Teledeporte" tvg-logo="https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200" group-title="Deportes",Teledeporte
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]
-#EXTINF:-1 tvg-id="TDP.TV" tvg-name="Teledeporte" tvg-logo="https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200" group-title="Deportes",Teledeporte GEO
-https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8
 #EXTINF:-1 tvg-id="Top_Barça.TV" tvg-name="Top Barça" tvg-logo="https://graph.facebook.com/fcbarcelona/picture?width=200&height=200" group-title="Deportes",Top Barça
 https://amg17560-fcb-amg17560c2-samsung-es-9803.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg17560-fcbarcelona-topbarcaspanish-samsunges/playlist.m3u8
 #EXTINF:-1 tvg-id="Vinx.TV" tvg-name="Vinx TV" tvg-logo="https://graph.facebook.com/VinxTV/picture?width=200&height=200" group-title="Deportes",Vinx TV
