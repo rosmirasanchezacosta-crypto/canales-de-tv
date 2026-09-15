@@ -587,10 +587,7 @@ https://streamconex.com:19360/puan/puan.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Canal_79_logo.png/320px-Canal_79_logo.png";; group-title="Noticias",Canal 79 Santa Clara del Mar
 #EXTVLCOPT:network-caching=1000
 https://streamconex.com:19360/santaclara-1/santaclara-1.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC21kAVTt58lmTaLMEgGpCb185zjiGjF6zonPjB0oiKg&s=10.png/320px-Canal_79_logo.png";;group-title="General",Canal 100 Chinique
-#EXTVLCOPT:network-caching=1000
-https://cdn.streamhispanatv.net:3295/live/canal100chilive.m3u8
-#EXTINF:0 group-title="General",Canal Once Del Zulia En Vivo
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVwcLCpUYb7TtYQdtAfGB6FRDqP_5ACtdC50fCPVhiA&s=10.png/320px-Canal_79_logo.png";; group-title="General",Canal 11 Del Zulia 
 #EXTVLCOPT:network-caching=1000
 https://tv.streamcasthd.com:3676/live/canal11delzulialive.m3u8
 #EXTINF:0 group-title="General",Canal Calima TV
