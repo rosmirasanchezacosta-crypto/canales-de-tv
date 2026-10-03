@@ -806,7 +806,7 @@ https://5fc584f3f19c9.streamlock.net/cristovision/videocristovision/playlist.m3u
 #EXTINF:-1 tvg-logo="http://www.tmsimg.com/assets/s18568_ll_h3_ac.png" group-title="Colombia",RCN
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo23/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNcXCQJVL7D5W1PkZCsNu6u3QqtYVgQQhabS_dgrv0Cw&s=10.png" group-title="Colombia",RCN+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHn7S0zCvv5sqBQQep5jdG62omGs-MAqqS9uV2God1w&s=10.png" group-title="Colombia",RCN NOVELAS
 #EXTVLCOPT:network-caching=1000
 https://cdnlive.klicgo.net/rcnnovelas/live/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.senalcolombia.tv/themes/custom/colombia_subtheme/img/nuevo_home/logo-inravision.svg" group-title="Colombia",Señal Colombia
