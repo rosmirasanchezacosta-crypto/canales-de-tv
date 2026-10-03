@@ -278,7 +278,7 @@ https://live20.bozztv.com/akamaissh101/ssh101/camutv/playlist.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/1K5b2Z7/canatvdigital.png";; group-title="General",Cana TV Digital
 #EXTVLCOPT:network-caching=1000
 https://stream.hostuis.com:19360/canatvdigital/canatvdigital.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/44/Canal_1_%28Colombia%29_logo.png";; group-title="General",Canal 1
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/44/Canal_1_%28Colombia%29_logo.png";; group-title="Colombia",Canal 1
 #EXTVLCOPT:network-caching=1000
 https://mdstrm.com/live-stream-playlist/5a5e1c2568b1910913db5fe2.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/42h5n8k/canal1cr.png";; group-title="General",Canal+1
@@ -806,6 +806,9 @@ https://5fc584f3f19c9.streamlock.net/cristovision/videocristovision/playlist.m3u
 #EXTINF:-1 tvg-logo="http://www.tmsimg.com/assets/s18568_ll_h3_ac.png" group-title="Colombia",RCN
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo23/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNcXCQJVL7D5W1PkZCsNu6u3QqtYVgQQhabS_dgrv0Cw&s=10.png" group-title="Colombia",RCN+
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.klicgo.net/rcnnovelas/live/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.senalcolombia.tv/themes/custom/colombia_subtheme/img/nuevo_home/logo-inravision.svg" group-title="Colombia",Señal Colombia
 #EXTVLCOPT:network-caching=1000
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/chunklist_b1500000.m3u8
