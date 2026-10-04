@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="General",lamil35
-#EXTVLCOPT:network-caching=1000
-https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vcr4J7HJeWoIYlFvb9SxQu-0hHIgeQqgVPPl_zpDSQ&s=10";; group-title="Deportes",ACCDN
 #EXTVLCOPT:network-caching=1000
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
@@ -782,12 +779,18 @@ https://live20.bozztv.com/akamaissh101/ssh101/cncvalledupar1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cablenoticias_logo.png" group-title="Colombia",Cablenoticias
 #EXTVLCOPT:network-caching=1000
 http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
-#EXTINF:-1 tvg-logo="https://graph.facebook.com/telecaribeEnvivo/picture?width=200&height=200.png" group-title="Colombia",Telecaribe
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZhiDErlH5jZ9rM5VAaGZyJ7GfVmBrzdpWypvsQTOyQ&s=10.png" group-title="Colombia",Telecaribe
 #EXTVLCOPT:network-caching=1000
 https://player.instantvideocloud.net/?autoplay=true#/embed/180720d1
+#EXTINF:-1 tvg-logo="http://www.tmsimg.com/assets/s18568_ll_h3_ac.png" group-title="Colombia",RCN
+#EXTVLCOPT:network-caching=1000
+https://s4.bufaloweb.com/bufalo23/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSfCou2J9qsACyHmTGo5imon7-JoF_TupF7lVZDhsbg&s=10.png" group-title="Colombia",RCN+
 #EXTVLCOPT:network-caching=1000
 https://rcntv-rcnmas-1-us.plex.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHn7S0zCvv5sqBQQep5jdG62omGs-MAqqS9uV2God1w&s=10.png" group-title="Colombia",RCN NOVELAS
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.klicgo.net/rcnnovelas/live/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Canal_TRO_logo.png" group-title="Colombia",Canal TRO
 #EXTVLCOPT:network-caching=1000
 https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
@@ -800,12 +803,6 @@ https://lbgo.bozztv.com/ssh101/ssh101/Cosmovisi%C3%B3n/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/Cristovision_logo.png" group-title="Colombia",Cristovisión
 #EXTVLCOPT:network-caching=1000
 https://5fc584f3f19c9.streamlock.net/cristovision/videocristovision/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://www.tmsimg.com/assets/s18568_ll_h3_ac.png" group-title="Colombia",RCN
-#EXTVLCOPT:network-caching=1000
-https://s4.bufaloweb.com/bufalo23/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHn7S0zCvv5sqBQQep5jdG62omGs-MAqqS9uV2God1w&s=10.png" group-title="Colombia",RCN NOVELAS
-#EXTVLCOPT:network-caching=1000
-https://cdnlive.klicgo.net/rcnnovelas/live/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.senalcolombia.tv/themes/custom/colombia_subtheme/img/nuevo_home/logo-inravision.svg" group-title="Colombia",Señal Colombia
 #EXTVLCOPT:network-caching=1000
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/chunklist_b1500000.m3u8
@@ -1326,10 +1323,6 @@ https://xuntalive.akamaized.net/hls/live/2032287/streamxunta/master.m3u8
 https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Señal Colombia" tvg-logo="https://graph.facebook.com/senalcolombiapaginaoficial/picture?width=200&height=200" group-title="Colombia",Señal Colombia
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Teleantioquia Colombia" tvg-logo="https://graph.facebook.com/CanalTeleantioquia/picture?width=200&height=200" group-title="Colombia",Teleantioquia Colombia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist_DVR.m3u8
 #EXTINF:-1 tvg-name="Telepacifico Colombia" tvg-logo="https://graph.facebook.com/TelepacificoTV/picture?width=200&height=200" group-title="Colombia",Telepacifico Colombia
 https://live-edge-par-1.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/live-telepacifico/index.m3u8
 #EXTINF:-1 tvg-id="ADN40.TV" tvg-name="ADN Noticias México" tvg-logo="https://pbs.twimg.com/profile_images/1968512728059850752/KUWD445m_200x200.jpg" group-title="México",ADN Noticias México
@@ -1366,8 +1359,6 @@ https://luna-4-video.mediaserver.digital/exitosatv_233b-4b49-a726-5a451262/index
 https://59d39900ebfb8.streamlock.net/globo-720p/globo-720p/playlist.m3u8
 #EXTINF:-1 tvg-name="Latina Perú" tvg-logo="https://graph.facebook.com/Latina.pe/picture?width=200&height=200" group-title="Latinoamérica",Latina Perú
 https://redirector.rudo.video/hls-video/567ffde3fa319fadf3419efda25619456231dfea/latina/latina.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Noticias RCN" tvg-logo="https://graph.facebook.com/NoticiasRCN/picture?width=200&height=200" group-title="Latinoamérica",Noticias RCN
-https://aka-live1050.delivery.roku.com/63a55317-8cde-4c4a-9a5f-3e6a97ae7c9e/t2-origin/out/v1/live.m3u8
 #EXTINF:-1 tvg-name="Oromar TV Ecuador" tvg-logo="https://graph.facebook.com/oromartv/picture?width=200&height=200" group-title="Latinoamérica",Oromar TV Ecuador
 https://stream.oromar.tv/hls/oromartv_hi/index.m3u8
 #EXTINF:-1 tvg-name="Pat Bolivia" tvg-logo="https://graph.facebook.com/patboliviahd/picture?width=200&height=200" group-title="Latinoamérica",Pat Bolivia
