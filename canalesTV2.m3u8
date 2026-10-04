@@ -1,4 +1,4 @@
-#EXTM3UFF
+#EXTM3U
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s";; group-title="General",lamil35
 #EXTVLCOPT:network-caching=1000
 https://vd01.streaminghd.net.ar:3349/live/bzuctkgnlive.m3u8
