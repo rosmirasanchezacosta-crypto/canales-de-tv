@@ -650,9 +650,6 @@ https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Canal_Provincial_San_Miguel_logo.png/320px-Canal_Provincial_San_Miguel_logo.png";; group-title="Noticias",Canal Provincial
 #EXTVLCOPT:network-caching=1000
 https://streaming.telered.com.ar/provincial/streaming/mystream.m3u8
-#EXTINF:0 tvg-logo="https://www.noticiasrcn.com/sites/default/files/logo_rcn.png";; group-title="General",Canal RCN
-#EXTVLCOPT:network-caching=1000
-http://38.183.182.166:8000/play/a10i/index.m3u8
 #EXTINF:0 group-title="General",Canal Ricos
 #EXTVLCOPT:network-caching=1000
 https://5d82644094cc0.streamlock.net/ricostv/ricostv/playlist.m3u8
