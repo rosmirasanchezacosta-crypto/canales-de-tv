@@ -1,77 +1,23 @@
 #EXTM3U
 # ===== España (218) =====
-#EXTINF:-1 tvg-id="101Antequera.TV" tvg-name="101TV Antequera" tvg-logo="https://graph.facebook.com/101tvAntequera/picture?width=200&height=200" group-title="España",101TV Antequera
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101weblive/smil:antequera.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="101TV Costa del Sol" tvg-logo="https://yt3.googleusercontent.com/dFDfeITvIVgSQQSNlgLw1WJ98Icuw-WlYJXNp31UhoABX3LOrJjXafo6a2H9EfhrA9Ah9e84=s200" group-title="España",101TV Costa del Sol
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101weblive/smil:BENALMADENA.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="101TV Cádiz" tvg-logo="https://yt3.googleusercontent.com/dFDfeITvIVgSQQSNlgLw1WJ98Icuw-WlYJXNp31UhoABX3LOrJjXafo6a2H9EfhrA9Ah9e84=s200" group-title="España",101TV Cádiz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101weblive/smil:CADIZ.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="101TV Granada" tvg-logo="https://graph.facebook.com/101tvgranada/picture?width=200&height=200" group-title="España",101TV Granada
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101weblive/smil:granada.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="101Malaga.TV" tvg-name="101TV Málaga" tvg-logo="https://graph.facebook.com/101tvmalaga/picture?width=200&height=200" group-title="España",101TV Málaga
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101televisionlive/smil:malagaott.smil/playlist.m3u8?DVR
-#EXTINF:-1 tvg-id="101Malaga.TV" tvg-name="101TV Málaga Cofrade" tvg-logo="https://graph.facebook.com/101tvmalaga/picture?width=200&height=200" group-title="España",101TV Málaga Cofrade
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101weblive/smil:CofradeMalaga.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="101TV Sevilla" tvg-logo="https://graph.facebook.com/101TVSevilla/picture?width=200&height=200" group-title="España",101TV Sevilla
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101televisionlive/smil:sevillaott.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="101TV Sevilla Cofrade" tvg-logo="https://graph.facebook.com/101TVSevilla/picture?width=200&height=200" group-title="España",101TV Sevilla Cofrade
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta318.cdnmedia.tv/101weblive/smil:CofradeSevilla.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="12TV Alicante" tvg-logo="https://graph.facebook.com/12tv.es/picture?width=200&height=200" group-title="España",12TV Alicante
-https://stream-us-east-1.getpublica.com/playlist.m3u8?cb=[CACHEBUSTER]&network_id=16126&live=1&avod=0&hls_marker=1&position=preroll&pod_duration=120&app_bundle=com.streamingconnect.viva&ssai_enabled=1&content_channel=12tv&app_domain=mirametv.live&app_category=linear_tv&content_cat=IAB1&content_genre=tv_broadcaster&content_network=streamingconnect&content_rating=TV-G&us_privacy=[US_PRIVACY]&gdpr=[GDPR]&ifa_type=[IFA_TYPE]&min_ad_duration=6&max_ad_duration=120&content_id=mirametv_live
 #EXTINF:-1 tvg-id="24H_CAN.TV" tvg-name="24h Canarias" tvg-logo="https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg" group-title="España",24h Canarias
 https://ztnr.rtve.es/ztnr/5473142.m3u8
 #EXTINF:-1 tvg-id="24H_CAT.TV" tvg-name="24h Catalunya" tvg-logo="https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg" group-title="España",24h Catalunya
 https://ztnr.rtve.es/ztnr/4952053.m3u8
 #EXTINF:-1 tvg-name="28 Kanala" tvg-logo="https://graph.facebook.com/28kanala/picture?width=200&height=200" group-title="España",28 Kanala
 https://streaming.28kanala.eus/hls/z.m3u8
-#EXTINF:-1 tvg-id="C33.TV" tvg-name="33" tvg-logo="https://graph.facebook.com/Canal33/picture?width=200&height=200" group-title="España",33 GEO
-https://directes-tv-es.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8
 #EXTINF:-1 tvg-name="3Cat Càmeres del temps" tvg-logo="https://graph.facebook.com/3CatInfoElTemps/picture?width=200&height=200" group-title="España",3Cat Càmeres del temps
 https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
-#EXTINF:-1 tvg-name="3Cat Càmeres del temps" tvg-logo="https://graph.facebook.com/3CatInfoElTemps/picture?width=200&height=200" group-title="España",3Cat Càmeres del temps GEO
-https://directes-tv-es.3catdirectes.cat/live-content/beauties-hls/master.m3u8
-#EXTINF:-1 tvg-name="3Cat Càmeres del temps" tvg-logo="https://graph.facebook.com/3CatInfoElTemps/picture?width=200&height=200" group-title="España",3Cat Càmeres del temps GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/beauties-hls/master.m3u8
 #EXTINF:-1 tvg-name="3Cat Doraemon" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Doraemon
 https://fast-tailor.3catdirectes.cat/v1/channel/doraemon/hls.m3u8
-#EXTINF:-1 tvg-name="3Cat Exclusiu 1" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Exclusiu 1 GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/oca1-hls/master.m3u8
-#EXTINF:-1 tvg-name="3Cat Exclusiu 2" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Exclusiu 2 GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/oca2-hls/master.m3u8
-#EXTINF:-1 tvg-name="3Cat Exclusiu 3" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Exclusiu 3 GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/oca3-hls/master.m3u8
-#EXTINF:-1 tvg-name="3Cat Exclusiu 4" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Exclusiu 4 GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/oca4-hls/master.m3u8
 #EXTINF:-1 tvg-name="3Cat Joc de Cartes" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Joc de Cartes
 https://fast-tailor.3catdirectes.cat/v1/channel/joc-de-cartes/hls.m3u8
 #EXTINF:-1 tvg-name="3Cat Plats bruts" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Plats bruts
 https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8
-#EXTINF:-1 tvg-name="3Cat Verdi Clàssics" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Verdi Clàssics GEO
-https://directes-tv-es.3catdirectes.cat/live-content/tem1-hls/master.m3u8
-#EXTINF:-1 tvg-name="3Cat Verdi Clàssics" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Verdi Clàssics GEO CAT
-https://directes-tv-cat.3catdirectes.cat/live-content/tem1-hls/master.m3u8
 #EXTINF:-1 tvg-name="3Cat Vinagreta" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Vinagreta
 https://fast-tailor.3catdirectes.cat/v1/channel/vinagreta/hls.m3u8
 #EXTINF:-1 tvg-id="7Televalencia.TV" tvg-name="7 TeleValencia" tvg-logo="https://pbs.twimg.com/profile_images/1876660632478437376/rbEqYeqC_200x200.jpg" group-title="España",7 TeleValencia
 https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8
-#EXTINF:-1 tvg-name="7TV Aljarafe" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Aljarafe
-https://streaming004.gestec-video.com/hls/7TVALJARAFE.m3u8
 #EXTINF:-1 tvg-name="7TV Almería" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Almería
 https://streaming004.gestec-video.com/hls/7TVALMERIA.m3u8
 #EXTINF:-1 tvg-id="7TV_Andalucía.TV" tvg-name="7TV Andalucía" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Andalucía
@@ -518,13 +464,10 @@ https://cloudvideo.servers10.com:8081/8130/index.m3u8
 #EXTINF:-1 tvg-name="Hispan TV Irán" tvg-logo="https://pbs.twimg.com/profile_images/1645382928422109184/lUdeHBAs_200x200.jpg" group-title="Latinoamérica",Hispan TV Irán
 https://live.presstv.ir/hls/hispantv_5_482/index.m3u8
 # ===== Colombia (25) =====
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/44/Canal_1_%28Colombia%29_logo.png";; group-title="Colombia",Canal 1
-#EXTVLCOPT:network-caching=1000
-https://mdstrm.com/live-stream-playlist/5a5e1c2568b1910913db5fe2.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10";; group-title="Colombia",Canal 14 Codazzi
 #EXTVLCOPT:network-caching=1000
 https://eu1.servers10.com:8081/8056/index.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Canal_2_Colombia_logo.svg/320px-Canal_2_Colombia_logo.svg.png";; group-title="Colombia",TvColombia
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10";; group-title="Colombia",TvColombia
 #EXTVLCOPT:network-caching=1000
 https://cloud6.livescast.com:3900/live/tevecolombialive.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvh1riYuEXF02vAQS5mwX6UBg0XqmTMgITZxk5YtzlQ&s=10.png" group-title="Colombia",Canal Capital
@@ -536,10 +479,10 @@ https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2M8m8c5el5y-rLqeWNniOsPcdTOBoNGWbRu4eN2Q0iw&s=10.png" group-title="Colombia",Canal CNC Valledupar
 #EXTVLCOPT:network-caching=1000
 https://live20.bozztv.com/akamaissh101/ssh101/cncvalledupar1/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cablenoticias_logo.png" group-title="Colombia",Cablenoticias
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnHuKgEi6Rm9aTytlG26kbGd5fcXErro6LyIuIzV0lAw&s=10" group-title="Colombia",Cablenoticias
 #EXTVLCOPT:network-caching=1000
 http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
-#EXTINF:-1 tvg-logo="https://graph.facebook.com/telecaribeEnvivo/picture?width=200&height=200.png" group-title="Colombia",Telecaribe
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCtV4zjPrmY-THfGZZPBi-ps2Osvyes68e3ZYzOR7P2g&s=10" group-title="Colombia",Telecaribe
 #EXTVLCOPT:network-caching=1000
 https://player.instantvideocloud.net/?autoplay=true#/embed/180720d1
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSfCou2J9qsACyHmTGo5imon7-JoF_TupF7lVZDhsbg&s=10.png" group-title="Colombia",RCN+
@@ -566,7 +509,7 @@ https://cdnlive.klicgo.net/rcnnovelas/live/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.senalcolombia.tv/themes/custom/colombia_subtheme/img/nuevo_home/logo-inravision.svg" group-title="Colombia",Señal Colombia
 #EXTVLCOPT:network-caching=1000
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/chunklist_b1500000.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0a/CNC_logo.png" group-title="Colombia",CNC Tulua
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ualLomXBdP3khlIssyUTptMf752zzQEv_lEwg-QIhg&s=10" group-title="Colombia",CNC Tulua
 #EXTVLCOPT:network-caching=1000
 https://live.amelbatv.co:81/cnctulualive/index.fmp4.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/15/R1t4Q.png/revision/latest/scale-to-width-down/200?cb=20210218130601&path-prefix=es" group-title="Colombia",CARACOL
@@ -575,22 +518,8 @@ https://s4.bufaloweb.com/bufalo22/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTI5qguAfqQNFI1HE2Q104yjjBjFru921sgkTqJsNkpQ&s=10" group-title="Colombia",Blu Radio TV
 #EXTVLCOPT:network-caching=1000
 https://mdstrm.com/live-stream-playlist/58d1921a72e2b22e2905e493.m3u8
-#EXTINF:-1 tvg-logo="https://intalnet.com/assets/img/nuevologo.png" group-title="Colombia",INTALNET TV
-#EXTVLCOPT:network-caching=1000
-http://skynetmax.live:8080/live/Julio0592/tYNq2EP/946458.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUG5pq-E-99G3H8MQyaotoKJ55sOldMaNyPhoU9ifQw&s" group-title="Colombia",TLC
-#EXTVLCOPT:network-caching=1000
-http://skynetmax.live:8080/live/Julio0592/tYNq2EP/784598.m3u8
-#EXTINF:-1 tvg-name="Canal TRO Colombia" tvg-logo="https://graph.facebook.com/canaltro/picture?width=200&height=200" group-title="Colombia",Canal TRO Colombia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="Señal Colombia" tvg-logo="https://graph.facebook.com/senalcolombiapaginaoficial/picture?width=200&height=200" group-title="Colombia",Señal Colombia
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-name="Teleantioquia Colombia" tvg-logo="https://graph.facebook.com/CanalTeleantioquia/picture?width=200&height=200" group-title="Colombia",Teleantioquia Colombia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 CrKey/1.44.191160
-#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
-https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist_DVR.m3u8
 #EXTINF:-1 tvg-name="Telepacifico Colombia" tvg-logo="https://graph.facebook.com/TelepacificoTV/picture?width=200&height=200" group-title="Colombia",Telepacifico Colombia
 https://live-edge-par-1.cdn.enetres.net/6E5C615AA5FF4123ACAF0DAB57B7B8DC021/live-telepacifico/index.m3u8
 # ===== México (8) =====
