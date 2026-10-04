@@ -1347,6 +1347,8 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00567-estrellamedia-estrellatv-estr
 https://5ca9af4645e15.streamlock.net/mexicotravel/videomexicotravel/playlist.m3u8
 #EXTINF:-1 tvg-name="Quiero TV México" tvg-logo="https://graph.facebook.com/quierotvGDL/picture?width=200&height=200" group-title="México",Quiero TV México
 https://stream.ontvmx.com/ontv/ghxTYEQmKkB2UJyVuW/playlist.m3u8
+#EXTINF:-1 tvg-name="Quiero TV México" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqK9cNU27Wbud5Jx9lNt1KCTcqm1W8QF3K1M-eOvNhQ&s=10" group-title="México",CNN México
+https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8
 #EXTINF:-1 tvg-name="TELE 10 Nayarit México" tvg-logo="https://yt3.googleusercontent.com/krfhsmd4GbzHY19-fuyfFZ7PwboLVojzf9gJPXDsXmXuWIgCrmjLT2irkJQNrXdyxmbSCVf7pSU=s200" group-title="México",TELE 10 Nayarit México
 https://live.iplanay.gob.mx/hls/nayarittv.m3u8
 #EXTINF:-1 tvg-name="America TeVe USA" tvg-logo="https://pbs.twimg.com/profile_images/2067373416173260801/9cUCY5wX_200x200.jpg" group-title="Latinoamérica",America TeVe USA
