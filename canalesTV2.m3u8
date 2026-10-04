@@ -788,9 +788,9 @@ http://138.186.23.7:8082/CABLENOTICIAS/index.m3u8
 #EXTINF:-1 tvg-logo="https://graph.facebook.com/telecaribeEnvivo/picture?width=200&height=200.png" group-title="Colombia",Telecaribe
 #EXTVLCOPT:network-caching=1000
 https://player.instantvideocloud.net/?autoplay=true#/embed/180720d1
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7a/Teleantioquia_logo.png" group-title="Colombia",Teleantioquia
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSfCou2J9qsACyHmTGo5imon7-JoF_TupF7lVZDhsbg&s=10.png" group-title="Colombia",RCN+
 #EXTVLCOPT:network-caching=1000
-https://live-edge.teleantioquia.co/live/playlist.m3u8
+https://rcntv-rcnmas-1-us.plex.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Canal_TRO_logo.png" group-title="Colombia",Canal TRO
 #EXTVLCOPT:network-caching=1000
 https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
