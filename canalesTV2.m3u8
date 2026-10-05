@@ -713,6 +713,9 @@ https://amg17560-fcb-amg17560c2-samsung-es-9803.playouts.now.amagi.tv/ts-eu-w1-n
 #EXTINF:-1 tvg-id="Vinx.TV" tvg-name="Vinx TV" tvg-logo="https://graph.facebook.com/VinxTV/picture?width=200&height=200" group-title="Deportes",Vinx TV
 https://live.enfoque.media:5443/live/streams/vinxtv.m3u8
 # ===== Cine (10) =====
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTabQ7oVPTUiQVkwnHGMqpDK3tox-rOd0p4ElVtgFzJrw&s=10";; group-title="Cine", CINE FAMILIAR
+#EXTVLCOPT:network-caching=1000
+http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinefamiliar.stream/playlist.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_7736_416_1_C00000_0_0_0.png?raw=true";; group-title="Cine", M+ CINE HD
 #EXTVLCOPT:network-caching=1000
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653456.m3u8
