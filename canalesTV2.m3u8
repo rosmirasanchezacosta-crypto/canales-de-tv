@@ -725,9 +725,6 @@ https://jmp2.uk/plu-60fb2f47c133270007327375.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVWsMN0N2Aeqo9ereWtZr_3SYo42Ws_loPrHXvJVF8g&s=10";; group-title="Cine",CINE 666
 #EXTVLCOPT:network-caching=1000
 https://jmp2.uk/plu-6823648580b2665220d9e69a.m3u8
-#EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_746E_3F0_1_C00000_0_0_0.png?raw=true";; group-title="Cine",M+ DRAMA HD
-#EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653448.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89a3FOpEFolKMhlKomtuccRx0lZskSF4c1KY_s7bU8Q&s=10";; group-title="Cine",Alegre TV RD
 #EXTVLCOPT:network-caching=1000
 https://streamunoapp.com:3149/live/alegretvlive.m3u8
