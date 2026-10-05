@@ -716,15 +716,15 @@ https://live.enfoque.media:5443/live/streams/vinxtv.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkn54YUKp83zOcJmpV9eX5bJ7H338fsSvbfWG6Zrdkg&s=10";; group-title="Cine", CINE EN ESPAÑOL
 #EXTVLCOPT:network-caching=1000
 https://jmp2.uk/plu-5cf96b1c4f1ca3f0629f4bf0.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTabQ7oVPTUiQVkwnHGMqpDK3tox-rOd0p4ElVtgFzJrw&s=10";; group-title="Cine", CINE FAMILIAR
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRVsi7UpLWNlcQQv99s-ShVqhH9R1GC7E83z1wM_nPw&s=10";; group-title="Cine", CINE ROMANTICO
 #EXTVLCOPT:network-caching=1000
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinefamiliar.stream/playlist.m3u8
-#EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_7736_416_1_C00000_0_0_0.png?raw=true";; group-title="Cine", M+ CINE HD
+https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ip2yIcXH7QSH6cbUpZ-hqdSAcXG5JVeLkVnSLf0cfg&s=10";; group-title="Cine", CINE AVENTURA
 #EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653456.m3u8
-#EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_19_7539_426_1_C00000_0_0_0.png?raw=true";; group-title="Cine",M+ ESTRENOS HD
+https://jmp2.uk/plu-60fb2f47c133270007327375.m3u8
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVWsMN0N2Aeqo9ereWtZr_3SYo42Ws_loPrHXvJVF8g&s=10";; group-title="Cine",CINE 666
 #EXTVLCOPT:network-caching=1000
-https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653436.m3u8
+https://jmp2.uk/plu-6823648580b2665220d9e69a.m3u8
 #EXTINF:0 tvg-logo="https://github.com/jungla-team/Picon-enigma2-Movistar/blob/main/jungle-picon-Movistar-color/picon/1_0_1_746E_3F0_1_C00000_0_0_0.png?raw=true";; group-title="Cine",M+ DRAMA HD
 #EXTVLCOPT:network-caching=1000
 https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653448.m3u8
