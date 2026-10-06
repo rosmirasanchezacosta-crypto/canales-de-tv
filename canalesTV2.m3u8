@@ -467,7 +467,7 @@ https://live.presstv.ir/hls/hispantv_5_482/index.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10";; group-title="Colombia",Canal 14 Codazzi
 #EXTVLCOPT:network-caching=1000
 https://eu1.servers10.com:8081/8056/index.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10";; group-title="Colombia",TvColombia
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtQN9ak5xdOeG_9NI3dTG12Gp08A_e02jKdkZXmSI9A&s=10";; group-title="Colombia",TvColombia
 #EXTVLCOPT:network-caching=1000
 https://cloud6.livescast.com:3900/live/tevecolombialive.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvh1riYuEXF02vAQS5mwX6UBg0XqmTMgITZxk5YtzlQ&s=10.png" group-title="Colombia",Canal Capital
@@ -488,19 +488,16 @@ https://player.instantvideocloud.net/?autoplay=true#/embed/180720d1
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSfCou2J9qsACyHmTGo5imon7-JoF_TupF7lVZDhsbg&s=10.png" group-title="Colombia",RCN+
 #EXTVLCOPT:network-caching=1000
 https://rcntv-rcnmas-1-us.plex.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Canal_TRO_logo.png" group-title="Colombia",Canal TRO
-#EXTVLCOPT:network-caching=1000
-https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9d/Citytv_logo.png" group-title="Colombia",CityTV Bogotá
 #EXTVLCOPT:network-caching=1000
 http://138.121.15.230:9002/CITY-TV/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1e/Cosmovision_logo.png" group-title="Colombia",Cosmovisión
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Q9Tkky8v8BaRpRCxGgFcAXLqehpVFfKI0W7LKkBDWw&s=10" group-title="Colombia",Cosmovisión
 #EXTVLCOPT:network-caching=1000
 https://lbgo.bozztv.com/ssh101/ssh101/Cosmovisi%C3%B3n/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/Cristovision_logo.png" group-title="Colombia",Cristovisión
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfIu2CnkX-q82XB_U8Iqax-QwS04YKsV3_eXIy3vsNuA&s=10" group-title="Colombia",Cristovisión
 #EXTVLCOPT:network-caching=1000
 https://5fc584f3f19c9.streamlock.net/cristovision/videocristovision/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://www.tmsimg.com/assets/s18568_ll_h3_ac.png" group-title="Colombia",RCN
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStziDU7ns2BbGV7r0cJkt1HvqBncE9AmrlJuAR-e-l0g&s=10" group-title="Colombia",RCN
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo23/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHn7S0zCvv5sqBQQep5jdG62omGs-MAqqS9uV2God1w&s=10.png" group-title="Colombia",RCN NOVELAS
