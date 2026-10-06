@@ -464,6 +464,9 @@ https://cloudvideo.servers10.com:8081/8130/index.m3u8
 #EXTINF:-1 tvg-name="Hispan TV Irán" tvg-logo="https://pbs.twimg.com/profile_images/1645382928422109184/lUdeHBAs_200x200.jpg" group-title="Latinoamérica",Hispan TV Irán
 https://live.presstv.ir/hls/hispantv_5_482/index.m3u8
 # ===== Colombia (25) =====
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPfFrUuD7QXK42_ce9rPghUehXYYA7W8fzjm5_IsGsdw&s";; group-title="Colombia",Kalutv
+#EXTVLCOPT:network-caching=1000
+https://eu1.servers10.com:8081/8056/index.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10";; group-title="Colombia",Canal 14 Codazzi
 #EXTVLCOPT:network-caching=1000
 https://eu1.servers10.com:8081/8056/index.m3u8
