@@ -467,7 +467,7 @@ https://live.presstv.ir/hls/hispantv_5_482/index.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10";; group-title="Colombia",Canal 14 Codazzi
 #EXTVLCOPT:network-caching=1000
 https://eu1.servers10.com:8081/8056/index.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP78D6QGSrkSSbIpVhQcbYvV7ksKjofTXYWN4AE7clYA&s=10";; group-title="Colombia",TvColombia
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtQN9ak5xdOeG_9NI3dTG12Gp08A_e02jKdkZXmSI9A&s=10";; group-title="Colombia",TvColombia
 #EXTVLCOPT:network-caching=1000
 https://cloud6.livescast.com:3900/live/tevecolombialive.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvh1riYuEXF02vAQS5mwX6UBg0XqmTMgITZxk5YtzlQ&s=10.png" group-title="Colombia",Canal Capital
