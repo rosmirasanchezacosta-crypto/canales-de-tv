@@ -718,16 +718,16 @@ https://live.enfoque.media:5443/live/streams/vinxtv.m3u8
 https://d2nq34q0i1r3la.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-awohw8g217ho8/CineWestern_ES.m3u8
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkn54YUKp83zOcJmpV9eX5bJ7H338fsSvbfWG6Zrdkg&s=10";; group-title="Cine", CINE EN ESPAÑOL
 #EXTVLCOPT:network-caching=1000
-https://jmp2.uk/plu-5cf96b1c4f1ca3f0629f4bf0.m3u8
+https://canal-cineespanol.elpatiodelsabor-82.workers.dev/
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRVsi7UpLWNlcQQv99s-ShVqhH9R1GC7E83z1wM_nPw&s=10";; group-title="Cine", CINE ROMANTICO
 #EXTVLCOPT:network-caching=1000
-https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8
+https://canal-cineromantico.elpatiodelsabor-82.workers.dev/
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ip2yIcXH7QSH6cbUpZ-hqdSAcXG5JVeLkVnSLf0cfg&s=10";; group-title="Cine", CINE AVENTURA
 #EXTVLCOPT:network-caching=1000
-https://jmp2.uk/plu-60fb2f47c133270007327375.m3u8
-#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVWsMN0N2Aeqo9ereWtZr_3SYo42Ws_loPrHXvJVF8g&s=10";; group-title="Cine",CINE 666
+https://canal-cineaventura.elpatiodelsabor-82.workers.dev/
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVWsMN0N2Aeqo9ereWtZr_3SYo42Ws_loPrHXvJVF8g&s=10";; group-title="Cine",CINE COREANO ESP
 #EXTVLCOPT:network-caching=1000
-https://jmp2.uk/plu-6823648580b2665220d9e69a.m3u8
+https://canal-dramas-coreanos.elpatiodelsabor-82.workers.dev/
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89a3FOpEFolKMhlKomtuccRx0lZskSF4c1KY_s7bU8Q&s=10";; group-title="Cine",Alegre TV RD
 #EXTVLCOPT:network-caching=1000
 https://streamunoapp.com:3149/live/alegretvlive.m3u8
