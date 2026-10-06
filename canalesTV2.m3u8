@@ -808,7 +808,7 @@ https://pixelblack.eu:443/live/Pumeta23/0naJU158nH/653574.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/JFHCd2Mm/channels4-profile.jpg?raw=true";; group-title="Infantil",DISNEY JR 2
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo19/tracks-v1a1/mono.ts.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/62/BabyFirst_logo.png";; group-title="Infantil",BabyFirst Spanish
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwiIyJeVDwmMwTRfCVf_hypBLoEwt3kbnUvRY8IfcPg&s=10";; group-title="Infantil",BabyFirst Spanish
 #EXTVLCOPT:network-caching=1000
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/be6f9eac-280e-4748-b866-2eb2463c1844/manifest.m3u8
 #EXTINF:-1 tvg-id="Clan.TV" tvg-name="Clan" tvg-logo="https://graph.facebook.com/clantve/picture?width=200&height=200" group-title="Infantil",Clan
@@ -832,7 +832,7 @@ https://directes-tv-es.3catdirectes.cat/live-content/super3-hls/master.m3u8
 #EXTINF:-1 tvg-id="SX3.TV" tvg-name="SX3" tvg-logo="https://graph.facebook.com/SomSX3/picture?width=200&height=200" group-title="Infantil",SX3 GEO CAT
 https://directes-tv-cat.3catdirectes.cat/live-content/super3-hls/master.m3u8
 # ===== Cultura (18) =====
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/52/Arirang_TV_logo.png";; group-title="Cultura",Arirang TV UN
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxXpWSFjM7s-7nU24_Y52C4wr-UIjVO9YHf2BG1LGTUg&s=10";; group-title="México",Arirang TV UN
 #EXTVLCOPT:network-caching=1000
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/9v0F53F/campustv.png";; group-title="Cultura",Campus TV
@@ -847,10 +847,7 @@ https://vdo.tecnoservix.stream:3007/live/canal15zamoranolive.m3u8
 #EXTINF:0 tvg-logo="https://i.ibb.co/5G0Y12V/canal15ilce.png";; group-title="Cultura",Canal 15 ILCE Summa Sabres
 #EXTVLCOPT:network-caching=1000
 https://live-ilce.ovp-vivaro.digital/ovp-origin-abr/ngrp:6359ef999f3fb_all/playlist.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/47/Canal_22_%28Mexico%29_logo.png";; group-title="Cultura",Canal 22
-#EXTVLCOPT:network-caching=1000
-https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/47/Canal_22_%28Mexico%29_logo.png";; group-title="Cultura",Canal 22 Nacional
+#EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtDZZ5mqKqpJMN5HwZ9USU_77AVm8zI7iDGMtPPv8qQ&s=10";; group-title="Cultura",Canal 22 Nacional
 #EXTVLCOPT:network-caching=1000
 https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8
 #EXTINF:0 group-title="Cultura",Canal do Criador
