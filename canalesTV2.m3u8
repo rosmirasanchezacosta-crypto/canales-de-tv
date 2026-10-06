@@ -488,7 +488,7 @@ https://player.instantvideocloud.net/?autoplay=true#/embed/180720d1
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSfCou2J9qsACyHmTGo5imon7-JoF_TupF7lVZDhsbg&s=10.png" group-title="Colombia",RCN+
 #EXTVLCOPT:network-caching=1000
 https://rcntv-rcnmas-1-us.plex.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9d/Citytv_logo.png" group-title="Colombia",CityTV Bogotá
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP78D6QGSrkSSbIpVhQcbYvV7ksKjofTXYWN4AE7clYA&s=10" group-title="Colombia",CityTV Bogotá
 #EXTVLCOPT:network-caching=1000
 https://www.youtube.com/embed/Q1CEBkYUkeM
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Q9Tkky8v8BaRpRCxGgFcAXLqehpVFfKI0W7LKkBDWw&s=10" group-title="Colombia",Cosmovisión
