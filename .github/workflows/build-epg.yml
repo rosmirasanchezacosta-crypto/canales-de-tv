@@ -1,0 +1,43 @@
+# GitHub Action: reconstruye la guia EPG de KikeFlix cada dia.
+# Ubicacion en tu repo:  .github/workflows/build-epg.yml
+# Requiere que 'build_epg.py' este en la RAIZ del repositorio.
+
+name: Construir guia EPG
+
+on:
+  schedule:
+    - cron: "0 5 * * *"      # todos los dias ~05:00 UTC (ajusta si quieres)
+  workflow_dispatch: {}       # permite lanzarlo a mano desde la pestana Actions
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install ijson
+
+      - name: Generar epg-mini.json
+        run: python build_epg.py
+
+      - name: Publicar si hubo cambios
+        run: |
+          git config user.name  "kikeflix-bot"
+          git config user.email "actions@github.com"
+          git add epg-mini.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios en la guia."
+          else
+            git commit -m "EPG actualizada ($(date -u +%Y-%m-%d_%H:%M)Z)"
+            git push
+          fi
