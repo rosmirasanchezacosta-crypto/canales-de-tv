@@ -193,6 +193,7 @@ def parse_xmltv_gz(path, index, need_keys, tag):
     log(f"    {tag}: {len(chan_keys)} canales cruzados, {n_pr} programas")
 
 # ---------- SCRAPER INTV ----------
+# ---------- SCRAPER INTV MEJORADO ----------
 def parse_intv(index, need_keys):
     if not BS4_AVAILABLE:
         return
@@ -214,7 +215,13 @@ def parse_intv(index, need_keys):
         for ch_url in channel_links:
             ch_slug = ch_url.rstrip('/').split('/')[-1]
             k_norm = norm(ch_slug)
-            matched_keys = set([k_norm]) & need_keys
+            
+            # Buscamos si alguna de nuestras claves de canales contiene el slug de INTV o viceversa
+            matched_keys = set()
+            for nk in need_keys:
+                if nk in k_norm or k_norm in nk:
+                    matched_keys.add(nk)
+            
             if not matched_keys:
                 continue
 
@@ -225,10 +232,14 @@ def parse_intv(index, need_keys):
                 ch_soup = BeautifulSoup(ch_html, 'html.parser')
                 items = ch_soup.find_all(['tr', 'div', 'li'], class_=re.compile(r'(programme|programa|item|schedule)', re.I))
                 
+                # Si no encuentra elementos específicos, intentamos buscar texto general de programación
+                if not items:
+                    items = ch_soup.find_all(['p', 'span'], limit=15)
+
                 n_ch += 1
                 for idx, item in enumerate(items):
                     text = item.get_text(" ", strip=True)
-                    if text:
+                    if len(text) > 3:
                         start_ms = int((now_dt + timedelta(hours=idx)).timestamp() * 1000)
                         end_ms = int((now_dt + timedelta(hours=idx + 1)).timestamp() * 1000)
                         add_prog(index, matched_keys, start_ms, end_ms, text[:60], "Programacion extraida de INTV")
@@ -236,8 +247,8 @@ def parse_intv(index, need_keys):
             except Exception:
                 continue
         log(f"    INTV: {n_ch} canales procesados, {n_pr} programas extraidos")
-    except Exception:
-        pass
+    except Exception as ex:
+        log("    AVISO INTV fallo:", ex)
 
 # ---------- MAIN ----------
 def main():
