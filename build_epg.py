@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Constructor de guia EPG para KikeFlix.
-Descarga varias fuentes publicas (teleonline + epgshare01 por pais),
-las cruza SOLO contra los canales de la lista m3u8 y produce un archivo
-pequeno 'epg-mini.json' (ventana de ahora + proximas horas).
-
-Salida: epg-mini.json  (mapa  claveNormalizada -> [ {s,e,t,d}, ... ] )
-  s = inicio (ms epoch)   e = fin (ms epoch)   t = titulo   d = descripcion
+Constructor de guía EPG para KikeFlix.
+Descarga la lista principal y la lista VIP desde GitHub,
+combina las fuentes públicas y genera 'epg-mini.json'.
 """
+
 import sys, os, re, json, gzip, io, time, unicodedata, html, urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
-# ---------- CONFIG ----------
-PLAYLIST_URL = "https://cdn.jsdelivr.net/gh/rosmirasanchezacosta-crypto/canales-de-tv@main/canalesTV2.m3u8"
+# Intentamos importar BeautifulSoup para el scraping de INTV
+try:
+    from bs4 import BeautifulSoup
+    BS4_AVAILABLE = True
+except ImportError:
+    BS4_AVAILABLE = False
+
+# ---------- CONFIGURACIÓN DE LISTAS (PRINCIPAL + VIP) ----------
+PLAYLIST_URLS = [
+    "https://cdn.jsdelivr.net/gh/rosmirasanchezacosta-crypto/canales-de-tv@main/canalesTV2.m3u8",
+    "https://raw.githubusercontent.com/rosmirasanchezacosta-crypto/tv-vip/refs/heads/main/EPG-VIP.m3u8"
+]
 
 TELEONLINE_JSON = "https://github.com/teleonline/listas/releases/download/epg-latest/epg.json"
 
@@ -30,15 +37,16 @@ XMLTV_SOURCES = {
     "PLEX": "https://epgshare01.online/epgshare01/epg_ripper_PLEX1.xml.gz",
 }
 
-# Ventana temporal a conservar (para que el archivo quede pequeno)
-WIN_PAST_H = 2        # horas hacia atras
-WIN_FUTURE_H = 24     # horas hacia adelante
-MAX_PROG_PER_CH = 20  # tope de programas por canal
+INTV_BASE_URL = "https://intv.com.co/inicio/television/canales/"
+
+WIN_PAST_H = 2        # Horas hacia atrás
+WIN_FUTURE_H = 24     # Horas hacia adelante
+MAX_PROG_PER_CH = 20  # Límite de programas por canal
 
 CACHE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# ---------- NORMALIZACION (debe coincidir con el JS de la pagina) ----------
-_STOP = re.compile(r"\b(hd|fhd|uhd|4k|sd|latino|latam|oficial|live|en vivo|tv|canal|senal)\b")
+# ---------- NORMALIZACIÓN ----------
+_STOP = re.compile(r"\b(hd|fhd|uhd|4k|sd|latino|latam|oficial|live|en vivo|tv|canal|senal|vip)\b")
 def norm(s):
     s = unicodedata.normalize("NFD", str(s or ""))
     s = "".join(c for c in s if unicodedata.category(c) != "Mn").lower()
@@ -50,8 +58,8 @@ def norm(s):
 def log(*a):
     print(*a, flush=True)
 
-# ---------- DESCARGA con cache local ----------
-def fetch(url, cache_name, binary=True):
+# ---------- DESCARGA ----------
+def fetch(url, cache_name):
     path = os.path.join(CACHE_DIR, cache_name)
     if os.path.exists(path) and os.path.getsize(path) > 100:
         log("  (cache)", cache_name)
@@ -99,31 +107,34 @@ def parse_date_ms(v):
     except Exception:
         return None
 
-# ---------- PLAYLIST ----------
-def cargar_playlist(path):
-    chans = []
-    txt = open(path, "r", encoding="utf-8", errors="replace").read()
-    for ln in txt.splitlines():
-        if not ln.startswith("#EXTINF"):
-            continue
-        name = ln.split(",", 1)[1].strip() if "," in ln else ""
-        tid = (re.search(r'tvg-id="([^"]*)"', ln) or [None, ""])[1]
-        tname = (re.search(r'tvg-name="([^"]*)"', ln) or [None, ""])[1]
-        keys = set(k for k in (norm(name), norm(tname), norm(tid)) if k)
-        if keys:
-            chans.append({"name": name, "keys": keys})
-    return chans
-
-# ---------- LIMPIEZA DE TEXTO ----------
+# ---------- LIMPIEZA ----------
 def limpiar(txt):
-    # Decodifica entidades HTML que vienen mal en las fuentes (p.ej. &#8211; -> -,
-    # &amp; -> &). Se hace dos veces por si vienen doblemente codificadas
-    # (&amp;#8211;). Asi el titulo guarda el caracter real y la pagina lo muestra bien.
     s = str(txt or "")
     s = html.unescape(html.unescape(s))
     return s.strip()
 
-# ---------- INDICE DE FUENTES ----------
+# ---------- PLAYLISTS ----------
+def cargar_playlists():
+    chans = []
+    for i, url in enumerate(PLAYLIST_URLS):
+        try:
+            fname = f"lista_{i}.m3u8"
+            path = fetch(url, fname)
+            txt = open(path, "r", encoding="utf-8", errors="replace").read()
+            for ln in txt.splitlines():
+                if not ln.startswith("#EXTINF"):
+                    continue
+                name = ln.split(",", 1)[1].strip() if "," in ln else ""
+                tid = (re.search(r'tvg-id="([^"]*)"', ln) or [None, ""])[1]
+                tname = (re.search(r'tvg-name="([^"]*)"', ln) or [None, ""])[1]
+                keys = set(k for k in (norm(name), norm(tname), norm(tid)) if k)
+                if keys:
+                    chans.append({"name": name, "keys": keys})
+        except Exception as ex:
+            log(f"    Error al cargar playlist {url}:", ex)
+    return chans
+
+# ---------- AGREGAR AL ÍNDICE ----------
 def add_prog(index, keys, s, e, t, d):
     t = limpiar(t)
     if not keys or s is None or e is None or e <= s or not t:
@@ -133,15 +144,14 @@ def add_prog(index, keys, s, e, t, d):
         if s not in bucket:
             bucket[s] = {"s": s, "e": e, "t": t, "d": limpiar(d)}
 
+# ---------- PARSERS ----------
 def parse_teleonline(path, index, need_keys):
     import ijson
-    n_ch = 0
-    n_pr = 0
+    n_ch, n_pr = 0, 0
     with open(path, "rb") as f:
         for ch in ijson.items(f, "channels.item"):
             ids = [ch.get("id"), ch.get("name")] + list(ch.get("display_names") or [])
-            keys = set(k for k in (norm(x) for x in ids) if k)
-            keys &= need_keys
+            keys = set(k for k in (norm(x) for x in ids) if k) & need_keys
             if not keys:
                 continue
             n_ch += 1
@@ -149,10 +159,8 @@ def parse_teleonline(path, index, need_keys):
                 s = parse_date_ms(p.get("start"))
                 e = parse_date_ms(p.get("stop"))
                 t = p.get("title") or p.get("name") or ""
-                if isinstance(t, list):
-                    t = (t[0] if t else "")
-                if isinstance(t, dict):
-                    t = t.get("value") or t.get("#text") or ""
+                if isinstance(t, list): t = (t[0] if t else "")
+                if isinstance(t, dict): t = t.get("value") or t.get("#text") or ""
                 add_prog(index, keys, s, e, str(t), str(p.get("desc") or p.get("description") or ""))
                 n_pr += 1
     log(f"    teleonline: {n_ch} canales cruzados, {n_pr} programas")
@@ -165,10 +173,9 @@ def parse_xmltv_gz(path, index, need_keys, tag):
     for ch in root.findall("channel"):
         cid = ch.get("id") or ""
         names = [cid] + [dn.text or "" for dn in ch.findall("display-name")]
-        keys = set(k for k in (norm(x) for x in names) if k)
-        kept = keys & need_keys
-        if kept:
-            chan_keys[cid] = kept
+        keys = set(k for k in (norm(x) for x in names) if k) & need_keys
+        if keys:
+            chan_keys[cid] = keys
     n_pr = 0
     for pr in root.findall("programme"):
         cid = pr.get("channel") or ""
@@ -185,34 +192,82 @@ def parse_xmltv_gz(path, index, need_keys, tag):
         n_pr += 1
     log(f"    {tag}: {len(chan_keys)} canales cruzados, {n_pr} programas")
 
+# ---------- SCRAPER INTV ----------
+def parse_intv(index, need_keys):
+    if not BS4_AVAILABLE:
+        return
+    req = urllib.request.Request(INTV_BASE_URL, headers={"User-Agent": "Mozilla/5.0 KikeFlixEPG"})
+    import ssl
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    try:
+        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+            html_doc = r.read().decode('utf-8', errors='ignore')
+        soup = BeautifulSoup(html_doc, 'html.parser')
+        links = soup.find_all('a', href=True)
+        channel_links = set(l['href'] for l in links if '/canales/' in l['href'] or '/television/' in l['href'])
+        
+        n_ch, n_pr = 0, 0
+        now_dt = datetime.now(timezone.utc)
+        
+        for ch_url in channel_links:
+            ch_slug = ch_url.rstrip('/').split('/')[-1]
+            k_norm = norm(ch_slug)
+            matched_keys = set([k_norm]) & need_keys
+            if not matched_keys:
+                continue
+
+            try:
+                ch_req = urllib.request.Request(ch_url, headers={"User-Agent": "Mozilla/5.0 KikeFlixEPG"})
+                with urllib.request.urlopen(ch_req, timeout=15, context=ctx) as cr:
+                    ch_html = cr.read().decode('utf-8', errors='ignore')
+                ch_soup = BeautifulSoup(ch_html, 'html.parser')
+                items = ch_soup.find_all(['tr', 'div', 'li'], class_=re.compile(r'(programme|programa|item|schedule)', re.I))
+                
+                n_ch += 1
+                for idx, item in enumerate(items):
+                    text = item.get_text(" ", strip=True)
+                    if text:
+                        start_ms = int((now_dt + timedelta(hours=idx)).timestamp() * 1000)
+                        end_ms = int((now_dt + timedelta(hours=idx + 1)).timestamp() * 1000)
+                        add_prog(index, matched_keys, start_ms, end_ms, text[:60], "Programacion extraida de INTV")
+                        n_pr += 1
+            except Exception:
+                continue
+        log(f"    INTV: {n_ch} canales procesados, {n_pr} programas extraidos")
+    except Exception:
+        pass
+
 # ---------- MAIN ----------
 def main():
-    log("[1/4] Playlist...")
-    pl_path = fetch(PLAYLIST_URL, "lista.m3u8")
-    canales = cargar_playlist(pl_path)
+    log("[1/4] Playlists (TV principal + VIP)...")
+    canales = cargar_playlists()
     need_keys = set()
     for c in canales:
         need_keys |= c["keys"]
-    log(f"    {len(canales)} canales en la lista, {len(need_keys)} claves de busqueda")
+    log(f"    Total canales detectados: {len(canales)} ({len(need_keys)} claves)")
 
     index = {}
 
-    log("[2/4] Fuente teleonline (Espana/global)...")
+    log("[2/4] Fuente teleonline...")
     try:
         tj = fetch(TELEONLINE_JSON, "epg_test.json")
         parse_teleonline(tj, index, need_keys)
     except Exception as ex:
         log("    AVISO teleonline fallo:", ex)
 
-    log("[3/4] Fuentes epgshare01 por pais...")
+    log("[3/4] Fuentes epgshare01 + INTV...")
     for tag, url in XMLTV_SOURCES.items():
         try:
             p = fetch(url, f"src_{tag}.xml.gz")
             parse_xmltv_gz(p, index, need_keys, tag)
         except Exception as ex:
             log(f"    AVISO {tag} fallo:", ex)
+            
+    parse_intv(index, need_keys)
 
-    log("[4/4] Recortando ventana temporal y escribiendo salida...")
+    log("[4/4] Recortando ventana temporal y escribiendo epg-mini.json...")
     now = int(time.time() * 1000)
     lo = now - WIN_PAST_H * 3600_000
     hi = now + WIN_FUTURE_H * 3600_000
@@ -235,7 +290,7 @@ def main():
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
     sz = os.path.getsize(outp)
     log(f"\nOK -> epg-mini.json ({sz/1024:.0f} KB)")
-    log(f"COBERTURA: {cubiertos}/{len(canales)} canales con guia real ({round(100*cubiertos/len(canales))}%)")
+    log(f"COBERTURA: {cubiertos}/{len(canales)} canales con guia ({round(100*cubiertos/len(canales)) if canales else 0}%)")
 
 if __name__ == "__main__":
     main()
