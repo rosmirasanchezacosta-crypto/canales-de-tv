@@ -61,6 +61,7 @@ INTV_MAP = {
     "dsports2":          ["DIRECTV SPORTS 2", "DIRECTV SPORTS2"],
     "win-sports":        ["WIN SPORTS", "WIN FUTBOL"],
     "telecaribe":        ["TELECARIBE", "TELECARIBE PLUS"],
+    "distrito-comedia":  ["DISTRITO COMEDIA"],
 }
 INTV_BASE = "https://intv.com.co/inicio/television/canales/{slug}/?nc={ts}"
 
