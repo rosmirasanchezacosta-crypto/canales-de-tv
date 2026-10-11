@@ -2,16 +2,14 @@
 # -*- coding: utf-8 -*-
 """
 Constructor de guía EPG para KikeFlix.
-Descarga la lista principal y la lista VIP desde GitHub,
-combina las fuentes públicas y scraping en vivo de mi.tv para Colombia,
-y genera 'epg-mini.json'.
+Combina listas M3U, fuentes XML, scraping en mi.tv y un sistema
+de respaldo (fallback) para asegurar que NINGÚN canal quede en blanco.
 """
 
 import sys, os, re, json, gzip, io, time, unicodedata, html, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 
-# Intentamos importar BeautifulSoup para el scraping de mi.tv / INTV
 try:
     from bs4 import BeautifulSoup
     BS4_AVAILABLE = True
@@ -38,7 +36,6 @@ XMLTV_SOURCES = {
     "PLEX": "https://epgshare01.online/epgshare01/epg_ripper_PLEX1.xml.gz",
 }
 
-# Canales principales de Colombia para scraping directo en mi.tv
 MITV_CHANNELS = {
     "amc": "amc",
     "cartoon network": "cartoon-network",
@@ -46,10 +43,40 @@ MITV_CHANNELS = {
     "space": "space",
     "caracol": "caracol",
     "rcn": "rcn",
-    "fox": "fx",
+    "fx": "fx",
     "cinemax": "cinemax",
     "hbo": "hbo",
-    "studio universal": "studio-universal"
+    "hbo 2": "hbo-2",
+    "hbo plus": "hbo-plus",
+    "hbo family": "hbo-family",
+    "hbo signature": "hbo-signature",
+    "hbo pop": "hbo-pop",
+    "studio universal": "studio-universal",
+    "universal tv": "universal-channel",
+    "axn": "axn",
+    "sony": "sony-channel",
+    "sony movies": "sony-movies",
+    "warner channel": "warner-channel",
+    "tnt series": "tnt-series",
+    "tnt novelas": "tnt-novelas",
+    "golden": "golden",
+    "golden edge": "golden-edge",
+    "Paramount": "paramount-network",
+    "mtv": "mtv",
+    "htv": "htv",
+    "tlc": "tlc",
+    "discovery": "discovery-channel",
+    "animal planet": "animal-planet",
+    "history": "history",
+    "espn 2": "espn-2",
+    "espn 3": "espn-3",
+    "espn 4": "espn-4",
+    "espn 5": "espn-5",
+    "espn 6": "espn-6",
+    "win-sports": "win-sports",
+    "win sports+": "win-sports-plus",
+    "telecaribe": "telecaribe",
+    "star channel": "star-channel"
 }
 
 WIN_PAST_H = 2       # Horas hacia atrás
@@ -120,7 +147,6 @@ def parse_date_ms(v):
     except Exception:
         return None
 
-# ---------- LIMPIEZA ----------
 def limpiar(txt):
     s = str(txt or "")
     s = html.unescape(html.unescape(s))
@@ -147,7 +173,6 @@ def cargar_playlists():
             log(f"    Error al cargar playlist {url}:", ex)
     return chans
 
-# ---------- AGREGAR AL ÍNDICE ----------
 def add_prog(index, keys, s, e, t, d):
     t = limpiar(t)
     if not keys or s is None or e is None or e <= s or not t:
@@ -205,22 +230,15 @@ def parse_xmltv_gz(path, index, need_keys, tag):
         n_pr += 1
     log(f"    {tag}: {len(chan_keys)} canales cruzados, {n_pr} programas")
 
-# ---------- SCRAPER MI.TV COLOMBIA ----------
 def parse_mitv(index, need_keys):
     if not BS4_AVAILABLE:
-        log("    BeautifulSoup no está disponible para scraping de mi.tv")
         return
-    
     import ssl
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
-    
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    }
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
-    n_ch, n_pr = 0, 0
     bogota_tz = timezone(timedelta(hours=-5))
     hoy = datetime.now(bogota_tz)
 
@@ -233,17 +251,14 @@ def parse_mitv(index, need_keys):
         url = f"https://mi.tv/co/canales/{slug}"
         try:
             req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=15, context=ctx) as r:
+            with urllib.request.urlopen(req, timeout=10, context=ctx) as r:
                 html_doc = r.read().decode('utf-8', errors='ignore')
-            
             soup = BeautifulSoup(html_doc, 'html.parser')
             items = soup.select(".broadcasts li")
             if not items:
                 continue
 
-            n_ch += 1
             progs_parsed = []
-
             for item in items:
                 time_tag = item.select_one(".time")
                 title_tag = item.select_one("h2")
@@ -252,41 +267,46 @@ def parse_mitv(index, need_keys):
                 if not time_tag or not title_tag:
                     continue
 
-                t_str = time_tag.get_text(strip=True) # p.ej. "01:00"
+                t_str = time_tag.get_text(strip=True)
                 title_str = title_tag.get_text(strip=True)
                 desc_str = desc_tag.get_text(strip=True) if desc_tag else ""
 
                 try:
                     h, m = map(int, t_str.split(":"))
                     dt_prog = datetime(hoy.year, hoy.month, hoy.day, h, m, tzinfo=bogota_tz)
-                    progs_parsed.append({
-                        "dt": dt_prog,
-                        "title": title_str,
-                        "desc": desc_str
-                    })
+                    progs_parsed.append({"dt": dt_prog, "title": title_str, "desc": desc_str})
                 except Exception:
                     continue
 
-            # Calcular tiempos de inicio y fin para cada programa
             for idx in range(len(progs_parsed)):
                 curr = progs_parsed[idx]
                 s_ms = int(curr["dt"].timestamp() * 1000)
-                
                 if idx + 1 < len(progs_parsed):
                     e_dt = progs_parsed[idx + 1]["dt"]
-                    if e_dt < curr["dt"]:
-                        e_dt += timedelta(days=1)
+                    if e_dt < curr["dt"]: e_dt += timedelta(days=1)
                     e_ms = int(e_dt.timestamp() * 1000)
                 else:
                     e_ms = s_ms + (2 * 3600 * 1000)
 
                 add_prog(index, matched_keys, s_ms, e_ms, curr["title"], curr["desc"])
-                n_pr += 1
-
-        except Exception as ex:
+        except Exception:
             continue
 
-    log(f"    mi.tv Colombia: {n_ch} canales actualizados, {n_pr} programas procesados")
+# ---------- RELLENO DE RESPALDO (FALLBACK) ----------
+def aplicar_relleno_respaldo(index, canales):
+    """Garantiza que ningún canal de tus M3U quede sin guía en el JSON."""
+    now_dt = datetime.now(timezone.utc)
+    n_rellenados = 0
+    for c in canales:
+        tiene_guia = any(k in index and len(index[k]) > 0 for k in c["keys"])
+        if not tiene_guia:
+            ch_name = c.get("name", "Canal TV")
+            for h_offset in range(0, 24, 4):
+                s_ms = int((now_dt + timedelta(hours=h_offset)).timestamp() * 1000)
+                e_ms = int((now_dt + timedelta(hours=h_offset + 4)).timestamp() * 1000)
+                add_prog(index, c["keys"], s_ms, e_ms, f"Transmisión en Vivo - {ch_name}", "Programación general del canal.")
+            n_rellenados += 1
+    log(f"    Respaldo: {n_rellenados} canales completados con guía por defecto")
 
 # ---------- MAIN ----------
 def main():
@@ -315,6 +335,9 @@ def main():
             log(f"    AVISO {tag} fallo:", ex)
             
     parse_mitv(index, need_keys)
+    
+    # Relleno de seguridad para garantizar 100% cobertura
+    aplicar_relleno_respaldo(index, canales)
 
     log("[4/4] Recortando ventana temporal y escribiendo epg-mini.json...")
     now = int(time.time() * 1000)
