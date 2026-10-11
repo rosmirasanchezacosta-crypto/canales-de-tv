@@ -3,14 +3,15 @@
 """
 Constructor de guía EPG para KikeFlix.
 Descarga la lista principal y la lista VIP desde GitHub,
-combina las fuentes públicas y genera 'epg-mini.json'.
+combina las fuentes públicas y scraping en vivo de mi.tv para Colombia,
+y genera 'epg-mini.json'.
 """
 
 import sys, os, re, json, gzip, io, time, unicodedata, html, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 
-# Intentamos importar BeautifulSoup para el scraping de INTV
+# Intentamos importar BeautifulSoup para el scraping de mi.tv / INTV
 try:
     from bs4 import BeautifulSoup
     BS4_AVAILABLE = True
@@ -37,11 +38,23 @@ XMLTV_SOURCES = {
     "PLEX": "https://epgshare01.online/epgshare01/epg_ripper_PLEX1.xml.gz",
 }
 
-INTV_BASE_URL = "https://intv.com.co/inicio/television/canales/"
+# Canales principales de Colombia para scraping directo en mi.tv
+MITV_CHANNELS = {
+    "amc": "amc",
+    "cartoon network": "cartoon-network",
+    "tnt": "tnt",
+    "space": "space",
+    "caracol": "caracol",
+    "rcn": "rcn",
+    "fox": "fx",
+    "cinemax": "cinemax",
+    "hbo": "hbo",
+    "studio universal": "studio-universal"
+}
 
-WIN_PAST_H = 2        # Horas hacia atrás
-WIN_FUTURE_H = 24     # Horas hacia adelante
-MAX_PROG_PER_CH = 20  # Límite de programas por canal
+WIN_PAST_H = 2       # Horas hacia atrás
+WIN_FUTURE_H = 24    # Horas hacia adelante
+MAX_PROG_PER_CH = 20 # Límite de programas por canal
 
 CACHE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -62,9 +75,9 @@ def log(*a):
 def fetch(url, cache_name):
     path = os.path.join(CACHE_DIR, cache_name)
     if os.path.exists(path) and os.path.getsize(path) > 100:
-        log("  (cache)", cache_name)
+        log("   (cache)", cache_name)
         return path
-    log("  descargando", cache_name, "...")
+    log("   descargando", cache_name, "...")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 KikeFlixEPG"})
     import ssl
     ctx = ssl.create_default_context()
@@ -192,63 +205,88 @@ def parse_xmltv_gz(path, index, need_keys, tag):
         n_pr += 1
     log(f"    {tag}: {len(chan_keys)} canales cruzados, {n_pr} programas")
 
-# ---------- SCRAPER INTV ----------
-# ---------- SCRAPER INTV MEJORADO ----------
-def parse_intv(index, need_keys):
+# ---------- SCRAPER MI.TV COLOMBIA ----------
+def parse_mitv(index, need_keys):
     if not BS4_AVAILABLE:
+        log("    BeautifulSoup no está disponible para scraping de mi.tv")
         return
-    req = urllib.request.Request(INTV_BASE_URL, headers={"User-Agent": "Mozilla/5.0 KikeFlixEPG"})
+    
     import ssl
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
-    try:
-        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
-            html_doc = r.read().decode('utf-8', errors='ignore')
-        soup = BeautifulSoup(html_doc, 'html.parser')
-        links = soup.find_all('a', href=True)
-        channel_links = set(l['href'] for l in links if '/canales/' in l['href'] or '/television/' in l['href'])
-        
-        n_ch, n_pr = 0, 0
-        now_dt = datetime.now(timezone.utc)
-        
-        for ch_url in channel_links:
-            ch_slug = ch_url.rstrip('/').split('/')[-1]
-            k_norm = norm(ch_slug)
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+
+    n_ch, n_pr = 0, 0
+    bogota_tz = timezone(timedelta(hours=-5))
+    hoy = datetime.now(bogota_tz)
+
+    for ch_name, slug in MITV_CHANNELS.items():
+        k_norm = norm(ch_name)
+        matched_keys = set(nk for nk in need_keys if nk == k_norm or k_norm in nk)
+        if not matched_keys:
+            continue
+
+        url = f"https://mi.tv/co/canales/{slug}"
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=15, context=ctx) as r:
+                html_doc = r.read().decode('utf-8', errors='ignore')
             
-            # Buscamos si alguna de nuestras claves de canales contiene el slug de INTV o viceversa
-            matched_keys = set()
-            for nk in need_keys:
-                if nk in k_norm or k_norm in nk:
-                    matched_keys.add(nk)
-            
-            if not matched_keys:
+            soup = BeautifulSoup(html_doc, 'html.parser')
+            items = soup.select(".broadcasts li")
+            if not items:
                 continue
 
-            try:
-                ch_req = urllib.request.Request(ch_url, headers={"User-Agent": "Mozilla/5.0 KikeFlixEPG"})
-                with urllib.request.urlopen(ch_req, timeout=15, context=ctx) as cr:
-                    ch_html = cr.read().decode('utf-8', errors='ignore')
-                ch_soup = BeautifulSoup(ch_html, 'html.parser')
-                items = ch_soup.find_all(['tr', 'div', 'li'], class_=re.compile(r'(programme|programa|item|schedule)', re.I))
+            n_ch += 1
+            progs_parsed = []
+
+            for item in items:
+                time_tag = item.select_one(".time")
+                title_tag = item.select_one("h2")
+                desc_tag = item.select_one(".synopsis")
+
+                if not time_tag or not title_tag:
+                    continue
+
+                t_str = time_tag.get_text(strip=True) # p.ej. "01:00"
+                title_str = title_tag.get_text(strip=True)
+                desc_str = desc_tag.get_text(strip=True) if desc_tag else ""
+
+                try:
+                    h, m = map(int, t_str.split(":"))
+                    dt_prog = datetime(hoy.year, hoy.month, hoy.day, h, m, tzinfo=bogota_tz)
+                    progs_parsed.append({
+                        "dt": dt_prog,
+                        "title": title_str,
+                        "desc": desc_str
+                    })
+                except Exception:
+                    continue
+
+            # Calcular tiempos de inicio y fin para cada programa
+            for idx in range(len(progs_parsed)):
+                curr = progs_parsed[idx]
+                s_ms = int(curr["dt"].timestamp() * 1000)
                 
-                # Si no encuentra elementos específicos, intentamos buscar texto general de programación
-                if not items:
-                    items = ch_soup.find_all(['p', 'span'], limit=15)
+                if idx + 1 < len(progs_parsed):
+                    e_dt = progs_parsed[idx + 1]["dt"]
+                    if e_dt < curr["dt"]:
+                        e_dt += timedelta(days=1)
+                    e_ms = int(e_dt.timestamp() * 1000)
+                else:
+                    e_ms = s_ms + (2 * 3600 * 1000)
 
-                n_ch += 1
-                for idx, item in enumerate(items):
-                    text = item.get_text(" ", strip=True)
-                    if len(text) > 3:
-                        start_ms = int((now_dt + timedelta(hours=idx)).timestamp() * 1000)
-                        end_ms = int((now_dt + timedelta(hours=idx + 1)).timestamp() * 1000)
-                        add_prog(index, matched_keys, start_ms, end_ms, text[:60], "Programacion extraida de INTV")
-                        n_pr += 1
-            except Exception:
-                continue
-        log(f"    INTV: {n_ch} canales procesados, {n_pr} programas extraidos")
-    except Exception as ex:
-        log("    AVISO INTV fallo:", ex)
+                add_prog(index, matched_keys, s_ms, e_ms, curr["title"], curr["desc"])
+                n_pr += 1
+
+        except Exception as ex:
+            continue
+
+    log(f"    mi.tv Colombia: {n_ch} canales actualizados, {n_pr} programas procesados")
 
 # ---------- MAIN ----------
 def main():
@@ -268,7 +306,7 @@ def main():
     except Exception as ex:
         log("    AVISO teleonline fallo:", ex)
 
-    log("[3/4] Fuentes epgshare01 + INTV...")
+    log("[3/4] Fuentes epgshare01 + mi.tv Colombia...")
     for tag, url in XMLTV_SOURCES.items():
         try:
             p = fetch(url, f"src_{tag}.xml.gz")
@@ -276,7 +314,7 @@ def main():
         except Exception as ex:
             log(f"    AVISO {tag} fallo:", ex)
             
-    parse_intv(index, need_keys)
+    parse_mitv(index, need_keys)
 
     log("[4/4] Recortando ventana temporal y escribiendo epg-mini.json...")
     now = int(time.time() * 1000)
