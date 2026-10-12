@@ -553,8 +553,6 @@ https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="TV Universidad" tvg-logo="https://i.imgur.com/tvLHiAT.png" tvg-id="TVUniversidad.ar" tvg-chno="32.1" tvg-country="AR" group-title="Argentina",TV Universidad
 https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8
-#EXTINF:-1 tvg-name="El Trece" tvg-logo="https://i.imgur.com/ZK7AQFg.png" tvg-id="ElTrece.ar" tvg-chno="33.1" tvg-country="AR" group-title="Argentina",El Trece
-https://livetrx01.vodgc.net/eltrecetv/index.m3u8
 # ===== Internacional (2) =====
 #EXTINF:0 tvg-name="Canal+ Haiti" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Canal%2B_logo.svg/320px-Canal%2B_logo.svg.png" group-title="Internacional",Canal+ Haiti
 #EXTVLCOPT:network-caching=1000
