@@ -6,55 +6,53 @@ https://ztnr.rtve.es/ztnr/5473142.m3u8
 https://ztnr.rtve.es/ztnr/4952053.m3u8
 #EXTINF:-1 tvg-name="28 Kanala" tvg-logo="https://graph.facebook.com/28kanala/picture?width=200&height=200" group-title="España",28 Kanala
 https://streaming.28kanala.eus/hls/z.m3u8
-#EXTINF:-1 tvg-id="CameresdeTemps.TV" tvg-name="3Cat Càmeres del temps" tvg-logo="https://graph.facebook.com/3CatInfoElTemps/picture?width=200&height=200" group-title="España",3Cat Càmeres del temps
-https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
-#EXTINF:-1 tvg-id="Doraemon.TV" tvg-name="3Cat Doraemon" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Doraemon
+#EXTINF:-1 tvg-id="sx3" tvg-name="sx3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0swoph02YoIScAp6kFqKGzEzerA33soicl6V24ZG5&s=10" group-title="España",sx3
 https://fast-tailor.3catdirectes.cat/v1/channel/doraemon/hls.m3u8
-#EXTINF:-1 tvg-name="3Cat Joc de Cartes" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Joc de Cartes
+#EXTINF:-1 tvg-name="3Cat Joc de Cartes" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRtLSZDr2WgRayXMOg9NhgVQtdzVHRqrYZAKTQT1lQ2w&s=10" group-title="España",3Cat Joc de Cartes
 https://fast-tailor.3catdirectes.cat/v1/channel/joc-de-cartes/hls.m3u8
-#EXTINF:-1 tvg-name="3Cat Plats bruts" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Plats bruts
+#EXTINF:-1 tvg-name="3Cat Plats bruts" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXsSZF3WHGapq8z5PIeMcYWn4U3qadA3_3rS09MigNA&s=10" group-title="España",3Cat Plats bruts
 https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8
-#EXTINF:-1 tvg-id="Vinagreta.TV" tvg-name="3Cat Vinagreta" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="España",3Cat Vinagreta
+#EXTINF:-1 tvg-id="Vinagreta.TV" tvg-name="3Cat Vinagreta" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxU8htBaYHsuMU6cgYllLYpd7MsHux6uWmVf9YrlcsmQ&s" group-title="España",3Cat Vinagreta
 https://fast-tailor.3catdirectes.cat/v1/channel/vinagreta/hls.m3u8
-#EXTINF:-1 tvg-id="7Televalencia.TV" tvg-name="7 TeleValencia" tvg-logo="https://pbs.twimg.com/profile_images/1876660632478437376/rbEqYeqC_200x200.jpg" group-title="España",7 TeleValencia
+#EXTINF:-1 tvg-id="7Televalencia" tvg-name="7 TeleValencia" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBEKNw1uezksfwevjkAlABIFsvrqGpXXJsStYeHmJHhg&s=10" group-title="España",7 TeleValencia
 https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8
-#EXTINF:-1 tvg-id="7Almeria.TV" tvg-name="7TV Almería" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Almería
+#EXTINF:-1 tvg-id="7Almeria.TV" tvg-name="7TV Almería" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6AM3_BsLeC5SQupcUP5TfSXGydb0EqHmdgJgfkbqhw&s=10" group-title="España",7TV Almería
 https://streaming004.gestec-video.com/hls/7TVALMERIA.m3u8
-#EXTINF:-1 tvg-id="7TV_Andalucía.TV" tvg-name="7TV Andalucía" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Andalucía
+#EXTINF:-1 tvg-id="7tv andalucia" tvg-name="7TV Andalucía" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfgeuEhjOaEYTHeMhZnHT-sC8cd02IzB18EHrvSUj9Sg&s=10" group-title="España",7TV Andalucía
 https://especial7tv.gestec-video.com/hls/regional.m3u8
-#EXTINF:-1 tvg-name="7TV Arcos" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Arcos
+#EXTINF:-1 tvg-name="7TV Arcos" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr2ve43Tj4hCwYlRL3D8ZTSy2zLgMqy0-5ROLkQ8hokw&s=10" group-title="España",7TV Arcos
 https://streaming004.gestec-video.com/hls/7TVARCOS.m3u8
 #EXTINF:-1 tvg-name="7TV Campo de Gibraltar" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Campo de Gibraltar
 https://streaming004.gestec-video.com/hls/7TVALGECIRAS.m3u8
-#EXTINF:-1 tvg-id="7Cadiz.TV" tvg-name="7TV Cádiz" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Cádiz
+#EXTINF:-1 tvg-id="onda cadiz" tvg-name="7TV Cádiz" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_FAYHEjBUECSWB81UBOvOrVBI5GQ1hLIswkkH0ecCQ&s" group-title="España",Onda cadiz
 https://streaming004.gestec-video.com/hls/7TVCADIZ.m3u8
-#EXTINF:-1 tvg-id="7Cordoba.TV" tvg-name="7TV Córdoba" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Córdoba
+#EXTINF:-1 tvg-id="ptv cordoba" tvg-name="ptv cordoba" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEmaoLrS6UG_TIxDfsluEnOGPMF_8f5ltINm1L1pS1w&s=10" group-title="España",7TV Córdoba
 https://streaming004.gestec-video.com/hls/7TVCORDOBA.m3u8
-#EXTINF:-1 tvg-id="7Granada.TV" tvg-name="7TV Granada" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Granada
+#EXTINF:-1 tvg-id="7Granada.TV" tvg-name="7TV Granada" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMebnz6wEHCdq3JaJycxP--MMIWjLLsJD38gym6mpLA&s=10" group-title="España",7TV Granada
 https://streaming004.gestec-video.com/hls/7TVGRANADA.m3u8
-#EXTINF:-1 tvg-name="7TV Huelva" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Huelva
+#EXTINF:-1 tvg-name="7TV Huelva" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpedvTj4zvlSCm_yFCGQRWn6wixUnfaQ4z02gZh9CFIw&s=10" group-title="España",7TV Huelva
 https://streaming004.gestec-video.com/hls/regional.m3u8
-#EXTINF:-1 tvg-id="7Jaen.TV" tvg-name="7TV Jaén" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Jaén
+#EXTINF:-1 tvg-id="7Jaen.TV" tvg-name="7TV Jaén" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs5PpaUbU86dZBSautZKKahuz3XkQoCHYq8jc3CP8xgg&s=10" group-title="España",7TV Jaén
 https://streaming004.gestec-video.com/hls/7TVJAEN.m3u8
-#EXTINF:-1 tvg-name="7TV Jerez" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Jerez
+#EXTINF:-1 tvg-name="7TV Jerez" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcg5G29y5kgLZb97QxwwcHvmdtKpUUdtLOSxca8V2BsQ&s=10" group-title="España",7TV Jerez
 https://streaming004.gestec-video.com/hls/7TVJEREZ.m3u8
-#EXTINF:-1 tvg-name="7TV Linares" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Linares
+#EXTINF:-1 tvg-name="ptv linares" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM7ru6itoku2uFExbakipS7RnLyB31IJlQHhsyVi245w&s=10" group-title="España",7TV Linares
 https://streaming004.gestec-video.com/hls/7TVLINARES.m3u8
-#EXTINF:-1 tvg-id="7Malaga.TV" tvg-name="7TV Málaga" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Málaga
+#EXTINF:-1 tvg-id="ptv malaga" tvg-name="ptv malaga" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlL0uR1o_Pkmd6R0QzJhfnelwZ7FCPl8J27YYL78xQg&s=10" group-title="España",7TV Málaga
 https://streaming004.gestec-video.com/hls/7TVMALAGA.m3u8
-#EXTINF:-1 tvg-name="7TV Rota" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Rota
+#EXTINF:-1 tvg-name="7TV Rota" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDFU7JQxHUa6k4HTeg7RRgQAPXSHijwSY1euk58nRqw&s=10" group-title="España",7TV Rota
 https://streaming004.gestec-video.com/hls/7TVROTA.m3u8
-#EXTINF:-1 tvg-name="7TV San Fernando" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV San Fernando
+#EXTINF:-1 tvg-name="7TV San Fernando" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBM_8dDCGb_qX2w7GGmmyUVMkl0ibvtotmlbXL2HUOzQ&s=10" group-title="España",7TV San Fernando
 https://streaming004.gestec-video.com/hls/7TVSANFERNANDO.m3u8
-#EXTINF:-1 tvg-id="7Sevilla.TV" tvg-name="7TV Sevilla" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="España",7TV Sevilla
+#EXTINF:-1 tvg-id="ptv sevilla" tvg-name="ptv sevilla" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmy9xJB75YCG2S3DwoNsp7uaVxn6i6IU7n9AY4S8O56g&s=10" group-title="España",7TV Sevilla
 https://especial7tv.gestec-video.com/hls/7TVSEVILLA.m3u8
-#EXTINF:-1 tvg-name="8 La Marina TV" tvg-logo="https://graph.facebook.com/8lamarinatelevision/picture?width=200&height=200" group-title="España",8 La Marina TV
+#EXTINF:-1 tvg-name="8 La Marina TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWuiNJtnoq8nUComRjA_CeMjC39jBat__E6BcO6y2Wcw&s=10" group-title="España",8 La Marina TV
 https://streaming005.gestec-video.com/hls/canal24.m3u8
-#EXTINF:-1 tvg-name="8TV Chiclana" tvg-logo="https://graph.facebook.com/8tvcadiz/picture?width=200&height=200" group-title="España",8TV Chiclana
+#EXTINF:-1 tvg-name="8TV Chiclana" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCxd10y0pv_WEp7YUv-33eds8Y1BqjfiQAci9O2EWTw&s=10" group-title="España",8TV Chiclana
 https://s.emisoras.tv:8081/chiclana/index.m3u8
-#EXTINF:-1 tvg-name="8TV La Janda" tvg-logo="https://graph.facebook.com/8tvcadiz/picture?width=200&height=200" group-title="España",8TV La Janda
+#EXTINF:-1 tvg-name="8TV La Janda" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzrWMCB9vEBxrv-JLFImYUg9kluPBxHwH4IYwqGS46Ow&s" group-title="España",8TV La Janda
 https://s.emisoras.tv:8081/lajanda/index.m3u8
-#EXTINF:-1 tvg-name="8TV Sierra de Cádiz" tvg-logo="https://graph.facebook.com/8tvcadiz/picture?width=200&height=200" group-title="España",8TV Sierra de Cádiz
+#EXTINF:-1 tvg-name="8TV Sierra de Cádiz" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFrfe17GyBMBAdVxFGUYcPuuMEjrSbdm7uz0sDDRzEZQ&s=10" group-title="España",8TV Sierra de Cádiz
 https://s.emisoras.tv:8081/sierradecadiz/index.m3u8
 #EXTINF:-1 tvg-id="9LaLoma.TV" tvg-name="9 la Loma TV" tvg-logo="https://graph.facebook.com/9laloma/picture?width=200&height=200" group-title="España",9 la Loma TV
 https://9laloma.tv/live.m3u8
@@ -972,6 +970,9 @@ https://ztnr.rtve.es/ztnr/6982917.m3u8
 https://ztnr.rtve.es/ztnr/6982891.m3u8
 #EXTINF:-1 tvg-id="RNE.TV" tvg-name="RNE para todos" tvg-logo="https://graph.facebook.com/radionacionalrne/picture?width=200&height=200" group-title="Radio",RNE para todos
 https://ztnr.rtve.es/ztnr/6688753.m3u8
+# ===== Camaras (1) =====
+#EXTINF:-1 tvg-id="CameresdeTemps.TV" tvg-name="3Cat Càmeres del temps" tvg-logo="https://graph.facebook.com/3CatInfoElTemps/picture?width=200&height=200" group-title="España",3Cat Càmeres del temps
+https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
 # ===== General (163) =====
 #EXTINF:0 tvg-name="lamil35" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMDXABUF6PIcJ9XgW3nkbUf-sgv3JBJsKYaZFkF8uUg&s" group-title="General",lamil35
 #EXTVLCOPT:network-caching=1000
