@@ -483,7 +483,7 @@ https://tv.kaludecolombia.com/memfs/d71c0104-4752-4690-bdbf-19aa849da6c4.m3u8
 #EXTINF:0 tvg-name="Canal 14 Codazzi" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ALKd-sJjEupSt1vlkkwUHkEg5A15qVr9Zo2ph_oGew&s=10" group-title="Colombia",Canal 14 Codazzi
 #EXTVLCOPT:network-caching=1000
 https://live20.bozztv.com/akamaissh101/ssh101/canal14codazzi/playlist.m3u8
-#EXTINF:0 tvg-name="TvColombia" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtQN9ak5xdOeG_9NI3dTG12Gp08A_e02jKdkZXmSI9A&s=10" group-title="Colombia",TvColombia
+#EXTINF:0 tvg-name="colombia" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtQN9ak5xdOeG_9NI3dTG12Gp08A_e02jKdkZXmSI9A&s=10" group-title="Colombia",TvColombia
 #EXTVLCOPT:network-caching=1000
 https://cloud6.livescast.com:3900/live/tevecolombialive.m3u8
 #EXTINF:-1 tvg-name="Canal Capital" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAvh1riYuEXF02vAQS5mwX6UBg0XqmTMgITZxk5YtzlQ&s=10.png" group-title="Colombia",Canal Capital
@@ -671,7 +671,7 @@ https://d2epgk1fomaa1g.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 #EXTINF:0 tvg-name="ACCDN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vcr4J7HJeWoIYlFvb9SxQu-0hHIgeQqgVPPl_zpDSQ&s=10" group-title="Deportes",ACCDN
 #EXTVLCOPT:network-caching=1000
 https://raycom-accdn-firetv.amagi.tv/playlist.m3u8
-#EXTINF:0 tvg-name="DGO+ SPORT" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBK2ySTBkFytKHIyDwLChkvdMUUt7KZ-c64qC2vaix1Q&s=10" group-title="Deportes",DGO+ SPORT
+#EXTINF:0 tvg-name="DIRECTV SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBK2ySTBkFytKHIyDwLChkvdMUUt7KZ-c64qC2vaix1Q&s=10" group-title="Deportes",DGO+ SPORT
 #EXTVLCOPT:network-caching=1000
 https://s4.bufaloweb.com/bufalo11/tracks-v1a1/mono.ts.m3u8
 #EXTINF:0 tvg-name="ESPN SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-oYa8QTkPgFenwTJM6AHCMOjXC-6G-MQZSDdwid2AUA&s=10.png?raw=true" group-title="Deportes",ESPN SPORTS
