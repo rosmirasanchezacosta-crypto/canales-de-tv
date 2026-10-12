@@ -471,7 +471,7 @@ https://s4.bufaloweb.com/bufalo23/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="RCN NOVELAS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrHn7S0zCvv5sqBQQep5jdG62omGs-MAqqS9uV2God1w&s=10.png" group-title="Colombia",RCN NOVELAS
 #EXTVLCOPT:network-caching=1000
 https://cdnlive.klicgo.net/rcnnovelas/live/playlist.m3u8
-#EXTINF:-1 tvg-name="Señal Colombia" tvg-logo="https://www.senalcolombia.tv/themes/custom/colombia_subtheme/img/nuevo_home/logo-inravision.svg" group-title="Colombia",Señal Colombia
+#EXTINF:-1 tvg-name="colombia" tvg-logo="https://www.senalcolombia.tv/themes/custom/colombia_subtheme/img/nuevo_home/logo-inravision.svg" group-title="Colombia",Señal Colombia
 #EXTVLCOPT:network-caching=1000
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/chunklist_b1500000.m3u8
 #EXTINF:0 tvg-name="Red+" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNEfMy7zoWKadl_iszNgfwMTODGP-N45OsgPa6n_yZZA&s=10" group-title="Colombia",Red+
