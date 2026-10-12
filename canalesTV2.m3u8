@@ -6,7 +6,7 @@ https://ztnr.rtve.es/ztnr/5473142.m3u8
 https://ztnr.rtve.es/ztnr/4952053.m3u8
 #EXTINF:-1 tvg-name="28 Kanala" tvg-logo="https://graph.facebook.com/28kanala/picture?width=200&height=200" group-title="España",28 Kanala
 https://streaming.28kanala.eus/hls/z.m3u8
-#EXTINF:-1 tvg-id="sx3" tvg-name="sx3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0swoph02YoIScAp6kFqKGzEzerA33soicl6V24ZG5&s=10" group-title="España",sx3
+#EXTINF:-1 tvg-id="SX3" tvg-name="SX3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0swoph02YoIScAp6kFqKGzEzerA33soicl6V24ZG5&s=10" group-title="España",SX3
 https://fast-tailor.3catdirectes.cat/v1/channel/doraemon/hls.m3u8
 #EXTINF:-1 tvg-name="3Cat Joc de Cartes" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRtLSZDr2WgRayXMOg9NhgVQtdzVHRqrYZAKTQT1lQ2w&s=10" group-title="España",3Cat Joc de Cartes
 https://fast-tailor.3catdirectes.cat/v1/channel/joc-de-cartes/hls.m3u8
