@@ -66,8 +66,8 @@ INTV_MAP = {
 INTV_BASE = "https://intv.com.co/inicio/television/canales/{slug}/?nc={ts}"
 
 # Ventana temporal a conservar (para que el archivo quede pequeno)
-WIN_PAST_H = 2        # horas hacia atras
-WIN_FUTURE_H = 24     # horas hacia adelante
+WIN_PAST_H = 1        # horas hacia atras
+WIN_FUTURE_H = 30     # horas hacia adelante
 MAX_PROG_PER_CH = 20  # tope de programas por canal
 
 CACHE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -361,8 +361,13 @@ def main():
     for k, bucket in index.items():
         progs = [p for p in bucket.values() if p["e"] > lo and p["s"] < hi]
         progs.sort(key=lambda p: p["s"])
+        # conserva el programa actual + los futuros (no los 20 primeros del día)
+        futuros = [p for p in progs if p["e"] > now]
+        actuales = [p for p in progs if p["e"] <= now]
+        progs = (actuales[-1:] if actuales else []) + futuros
+        progs = progs[:MAX_PROG_PER_CH]
         if progs:
-            out[k] = progs[:MAX_PROG_PER_CH]
+            out[k] = progs
 
     cubiertos = sum(1 for c in canales if any(k in out for k in c["keys"]))
     payload = {
