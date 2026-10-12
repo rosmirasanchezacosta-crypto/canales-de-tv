@@ -1,4 +1,4 @@
-# GitHub Action: reconstruye la guia EPG de KikeFlix cada dia.
+# GitHub Action: reconstruye la guia EPG de KikeFlix cada 4 horas.
 # Ubicacion en tu repo:  .github/workflows/build-epg.yml
 # Requiere que 'build_epg.py' este en la RAIZ del repositorio.
 
@@ -6,7 +6,7 @@ name: Construir guia EPG
 
 on:
   schedule:
-    - cron: "0 5 * * *"      # todos los dias ~05:00 UTC (ajusta si quieres)
+    - cron: "30 */4 * * *"    # cada 4 horas (a las 00:30, 04:30, 08:30... UTC)
   workflow_dispatch: {}       # permite lanzarlo a mano desde la pestana Actions
 
 permissions:
