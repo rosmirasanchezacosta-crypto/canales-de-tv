@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Constructor de guia EPG para KikeFlix.
-Descarga varias fuentes publicas (teleonline + epgshare01 por pais),
+Descarga varias fuentes publicas (teleonline + epgshare01 por pais + intv + videostreaming),
 las cruza SOLO contra los canales de la lista m3u8 y produce un archivo
 pequeno 'epg-mini.json' (ventana de ahora + proximas horas).
 
@@ -11,7 +11,7 @@ Salida: epg-mini.json  (mapa  claveNormalizada -> [ {s,e,t,d}, ... ] )
 """
 import sys, os, re, json, gzip, io, time, unicodedata, html, urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 # ---------- CONFIG ----------
 # Dos listas: la principal de TV y la de canales VIP (tarjetas de la pagina).
@@ -34,17 +34,13 @@ XMLTV_SOURCES = {
     "PLEX": "https://epgshare01.online/epgshare01/epg_ripper_PLEX1.xml.gz",
 }
 
-# ---------- FUENTE intv.com.co (parrilla real por canal, texto) ----------
-# Cada pagina /inicio/television/canales/<slug>/ trae filas <tr class="intv-program-row">
-# con data-start / data-end (epoch en SEGUNDOS) y data-program (titulo). Es la
-# fuente REAL y verificada (coincide con lo que se ve en pantalla, hora Colombia).
-#
-# Formato:  slug de intv  ->  [ nombres (alias) tal como aparecen en tus listas ]
-# Se agrega la programacion bajo la clave normalizada de CADA alias, para que
-# funcione sin importar como se llame el canal en la pagina/el m3u8.
-# intv solo RELLENA canales sin guia real; nunca pisa lo que ya trajeron las
-# otras fuentes (ver parse_intv -> fill-only-if-empty). Nada de datos inventados.
+# ---------- FUENTE VIDEOSTREAMING (Canal propio) ----------
+VIDEOSTREAMING_EPG = "https://app.videostreaming.net/m/epg/97f0d5114a"
+VIDEOSTREAMING_MAP = {
+    "97f0d5114a": ["KIKEFLIX-CINE", "KikeFlix Cine", "kikeflix-cine"]
+}
 
+# ---------- FUENTE intv.com.co (parrilla real por canal, texto) ----------
 MAPA_INTV = {
     "star-channel": ["STAR CHANEL", "Star Channel"],
     "sony-movies": ["SONY MOVIES"],
@@ -54,7 +50,7 @@ MAPA_INTV = {
     "cartoon-network": ["CARTOON NETWORK", "cartoon network"],
     "warner-channel": ["WARNER-2", "WARNER CHANNEL", "WARNER"],
     "paramount-channel": ["PARAMOUNT", "PARAMOUNT NETWORK"],
-    "space": ["SPACE ESPANOL", "SPACE 2", "SPACE"],
+    "space": ["SPACE ESPANOL", "SPACE 2", "SPACE", "Space"],
     "espn-4": ["SPN 4", "ESPN 4"],
     "espn-5": ["SPN 5", "ESPN 5"],
     "espn-6": ["SPN 6", "ESPN 6"],
@@ -63,13 +59,11 @@ MAPA_INTV = {
     "win-sports": ["WIN SPORTS", "WIN FUTBOL"],
     "telecaribe": ["TELECARIBE", "TELECARIBE PLUS"],
     "distrito-comedia": ["DISTRITO COMEDIA"],
-    "kikeflix-cine": ["KIKEFLIX-CINE"],
     "24-horas": ["24 Horas"],
     "cine-mexicano": ["CINE MEXICANO"],
     "vive-mundial-2": ["VIVE MUNDIAL2"],
     "todo-cine": ["TODO CINE"],
     "canela-tv": ["CANELA TV"],
-    "space": ["Space", "SPACE"],
     "space-2": ["SPACE 2"],
     "sony": ["SONY"],
     "discovery-kids": ["DISCOVERY KIDS"],
@@ -146,9 +140,9 @@ def log(*a):
 def fetch(url, cache_name, binary=True):
     path = os.path.join(CACHE_DIR, cache_name)
     if os.path.exists(path) and os.path.getsize(path) > 100:
-        log("  (cache)", cache_name)
+        log("   (cache)", cache_name)
         return path
-    log("  descargando", cache_name, "...")
+    log("   descargando", cache_name, "...")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 KikeFlixEPG"})
     import ssl
     ctx = ssl.create_default_context()
@@ -227,9 +221,6 @@ def cargar_playlists():
 
 # ---------- LIMPIEZA DE TEXTO ----------
 def limpiar(txt):
-    # Decodifica entidades HTML que vienen mal en las fuentes (p.ej. &#8211; -> -,
-    # &amp; -> &). Se hace dos veces por si vienen doblemente codificadas
-    # (&amp;#8211;). Asi el titulo guarda el caracter real y la pagina lo muestra bien.
     s = str(txt or "")
     s = html.unescape(html.unescape(s))
     return s.strip()
@@ -297,10 +288,6 @@ def parse_xmltv_gz(path, index, need_keys, tag):
     log(f"    {tag}: {len(chan_keys)} canales cruzados, {n_pr} programas")
 
 def _intv_fetch(slug):
-    """Descarga una pagina de canal de intv.com.co (con cache-bust para traer HOY).
-    Usa urllib con UA de navegador; el panel es LiteSpeed y responde bien a curl/UA.
-    El plugin a veces devuelve el HTML sin las filas de programacion (anti-bot/
-    render intermitente): reintenta hasta traer una pagina con filas reales."""
     import ssl
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
@@ -327,17 +314,9 @@ def _intv_fetch(slug):
 
 _INTV_ROW = re.compile(r'<tr class="intv-program-row"([^>]*)>')
 def parse_intv(index, need_keys):
-    """Cruza las parrillas reales de intv.com.co (fuente Colombia) para los canales
-    de INTV_MAP. intv es la fuente autoritativa para estos canales: cuando trae
-    filas reales SOBREESCRIBE lo que hayan puesto las fuentes genericas globales
-    (teleonline/epgshare suelen meter parrillas extranjeras o mezcladas, p.ej.
-    Cartoon Network en aleman). Si intv no devuelve filas para un canal, NO se
-    toca lo que ya exista (nunca se borra guia valida ni se inventan matches).
-      - data-start/-end vienen en segundos epoch -> se pasan a ms."""
     n_ch = 0
     n_pr = 0
-    for slug, aliases in INTV_MAP.items():
-        # claves pedidas (alias normalizados que algun canal de la lista busca)
+    for slug, aliases in MAPA_INTV.items():
         keys = set()
         for a in aliases:
             k = norm(a)
@@ -362,14 +341,11 @@ def parse_intv(index, need_keys):
             e = int(ge.group(1)) * 1000 if ge else None
             rows.append([s, e, html.unescape(gp.group(1))])
         if not rows:
-            # intv no trajo guia hoy para este canal: respetar lo existente
             continue
         rows.sort(key=lambda r: r[0])
-        # arregla fin con el inicio del siguiente cuando falte o sea <= inicio
         for i, r in enumerate(rows):
             if r[1] is None or r[1] <= r[0]:
                 r[1] = rows[i + 1][0] if i + 1 < len(rows) else r[0] + 3600_000
-        # SOBREESCRIBE: intv manda para estos canales -> limpia la guia previa
         for k in keys:
             index[k] = {}
         n_ch += 1
@@ -378,9 +354,85 @@ def parse_intv(index, need_keys):
             n_pr += 1
     log(f"    intv.com.co: {n_ch} canales cruzados, {n_pr} programas")
 
+# ---------- FUENTE VIDEOSTREAMING (KIKEFLIX CINE) ----------
+def parse_videostreaming(index, need_keys):
+    """Extrae la guia real de window.VS_EPG para KikeFlix Cine (videostreaming.net)"""
+    n_ch = 0
+    n_pr = 0
+    
+    keys = set()
+    for aliases in VIDEOSTREAMING_MAP.values():
+        for a in aliases:
+            k = norm(a)
+            if k and k in need_keys:
+                keys.add(k)
+
+    if not keys:
+        return
+
+    try:
+        req = urllib.request.Request(
+            VIDEOSTREAMING_EPG, 
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        )
+        import ssl
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        
+        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+            html_content = r.read().decode("utf-8", "replace")
+
+        match = re.search(r'window\.VS_EPG\s*=\s*(\{.*?\});', html_content, re.DOTALL)
+        if not match:
+            log("    AVISO videostreaming: No se encontro el objeto window.VS_EPG")
+            return
+
+        vs_data = json.loads(match.group(1))
+        timeline = vs_data.get("timeline", [])
+        if not timeline:
+            return
+
+        # Ajuste de zona horaria Colombia (UTC-5)
+        tz_cot = timezone(timedelta(hours=-5))
+        now_cot = datetime.now(tz_cot)
+        today_str = now_cot.strftime("%Y-%m-%d")
+
+        # Limpiar guia anterior para sobreescribir con la real
+        for k in keys:
+            index[k] = {}
+
+        n_ch += 1
+        for item in timeline:
+            nombre = item.get("nombre") or "Programa"
+            desde_str = item.get("desde") or "00:00"
+            hasta_str = item.get("hasta") or "00:00"
+
+            try:
+                dt_s = datetime.fromisoformat(f"{today_str}T{desde_str}:00-05:00")
+                dt_e = datetime.fromisoformat(f"{today_str}T{hasta_str}:00-05:00")
+
+                s_ms = int(dt_s.timestamp() * 1000)
+                e_ms = int(dt_e.timestamp() * 1000)
+
+                # Si cruza la medianoche (ej. 23:00 a 02:00)
+                if e_ms <= s_ms:
+                    e_ms += 24 * 3600 * 1000
+
+                sub_desc = f"Categoria: {item.get('key', '')}"
+                add_prog(index, keys, s_ms, e_ms, nombre, sub_desc)
+                n_pr += 1
+            except Exception:
+                continue
+
+        log(f"    videostreaming.net: {n_ch} canal cruzado, {n_pr} programas")
+
+    except Exception as ex:
+        log("    AVISO videostreaming.net fallo:", ex)
+
 # ---------- MAIN ----------
 def main():
-    log("[1/5] Playlists (TV principal + VIP)...")
+    log("[1/6] Playlists (TV principal + VIP)...")
     canales = cargar_playlists()
     need_keys = set()
     for c in canales:
@@ -389,14 +441,14 @@ def main():
 
     index = {}
 
-    log("[2/5] Fuente teleonline (Espana/global)...")
+    log("[2/6] Fuente teleonline (Espana/global)...")
     try:
         tj = fetch(TELEONLINE_JSON, "epg_test.json")
         parse_teleonline(tj, index, need_keys)
     except Exception as ex:
         log("    AVISO teleonline fallo:", ex)
 
-    log("[3/5] Fuentes epgshare01 por pais...")
+    log("[3/6] Fuentes epgshare01 por pais...")
     for tag, url in XMLTV_SOURCES.items():
         try:
             p = fetch(url, f"src_{tag}.xml.gz")
@@ -404,13 +456,19 @@ def main():
         except Exception as ex:
             log(f"    AVISO {tag} fallo:", ex)
 
-    log("[4/5] Fuente intv.com.co (parrilla real por canal)...")
+    log("[4/6] Fuente intv.com.co (parrilla real por canal)...")
     try:
         parse_intv(index, need_keys)
     except Exception as ex:
         log("    AVISO intv.com.co fallo:", ex)
 
-    log("[5/5] Recortando ventana temporal y escribiendo salida...")
+    log("[5/6] Fuente videostreaming.net (canal propio KIKEFLIX CINE)...")
+    try:
+        parse_videostreaming(index, need_keys)
+    except Exception as ex:
+        log("    AVISO videostreaming.net fallo:", ex)
+
+    log("[6/6] Recortando ventana temporal y escribiendo salida...")
     now = int(time.time() * 1000)
     lo = now - WIN_PAST_H * 3600_000
     hi = now + WIN_FUTURE_H * 3600_000
@@ -418,7 +476,7 @@ def main():
     for k, bucket in index.items():
         progs = [p for p in bucket.values() if p["e"] > lo and p["s"] < hi]
         progs.sort(key=lambda p: p["s"])
-        # conserva el programa actual + los futuros (no los 20 primeros del día)
+        
         futuros = [p for p in progs if p["e"] > now]
         actuales = [p for p in progs if p["e"] <= now]
         progs = (actuales[-1:] if actuales else []) + futuros
