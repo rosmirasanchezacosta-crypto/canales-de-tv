@@ -468,19 +468,26 @@ def main():
     except Exception as ex:
         log("    AVISO videostreaming.net fallo:", ex)
 
-    log("[6/6] Recortando ventana temporal y escribiendo salida...")
+  log("[6/6] Recortando ventana temporal y escribiendo salida...")
     now = int(time.time() * 1000)
     lo = now - WIN_PAST_H * 3600_000
     hi = now + WIN_FUTURE_H * 3600_000
     out = {}
+    
     for k, bucket in index.items():
         progs = [p for p in bucket.values() if p["e"] > lo and p["s"] < hi]
         progs.sort(key=lambda p: p["s"])
         
-        futuros = [p for p in progs if p["e"] > now]
-        actuales = [p for p in progs if p["e"] <= now]
-        progs = (actuales[-1:] if actuales else []) + futuros
-        progs = progs[:MAX_PROG_PER_CH]
+        # Si es tu canal KikeFlix, guardar el actual y los siguientes 3 programas seguros (hasta las 12)
+        if "kikeflix" in k:
+            progs = progs[:5]  # Muestra el actual y los próximos 4 bloques del día
+        else:
+            # Recorte normal para los demás canales de la lista
+            futuros = [p for p in progs if p["e"] > now]
+            actuales = [p for p in progs if p["e"] <= now]
+            progs = (actuales[-1:] if actuales else []) + futuros
+            progs = progs[:MAX_PROG_PER_CH]
+            
         if progs:
             out[k] = progs
 
