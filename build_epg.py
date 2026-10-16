@@ -14,7 +14,6 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 
 # ---------- CONFIG ----------
-# Dos listas: la principal de TV y la de canales VIP (tarjetas de la pagina).
 PLAYLIST_URLS = [
     "https://cdn.jsdelivr.net/gh/rosmirasanchezacosta-crypto/canales-de-tv@main/canalesTV2.m3u8",
     "https://raw.githubusercontent.com/rosmirasanchezacosta-crypto/tv-vip/refs/heads/main/EPG-VIP.m3u8",
@@ -116,14 +115,12 @@ MAPA_INTV = {
 }
 INTV_BASE = "https://intv.com.co/inicio/television/canales/{slug}/?nc={ts}"
 
-# Ventana temporal a conservar (para que el archivo quede pequeno)
-WIN_PAST_H = 1        # horas hacia atras
-WIN_FUTURE_H = 30     # horas hacia adelante
-MAX_PROG_PER_CH = 20  # tope de programas por canal
+WIN_PAST_H = 1        
+WIN_FUTURE_H = 30     
+MAX_PROG_PER_CH = 20  
 
 CACHE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# ---------- NORMALIZACION (debe coincidir con el JS de la pagina) ----------
 _STOP = re.compile(r"\b(hd|fhd|uhd|4k|sd|latino|latam|oficial|live|en vivo|tv|canal|senal)\b")
 def norm(s):
     s = unicodedata.normalize("NFD", str(s or ""))
@@ -136,7 +133,6 @@ def norm(s):
 def log(*a):
     print(*a, flush=True)
 
-# ---------- DESCARGA con cache local ----------
 def fetch(url, cache_name, binary=True):
     path = os.path.join(CACHE_DIR, cache_name)
     if os.path.exists(path) and os.path.getsize(path) > 100:
@@ -148,7 +144,7 @@ def fetch(url, cache_name, binary=True):
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
-    with urllib.request.urlopen(req, timeout=120, context=ctx) as r, open(path, "wb") as f:
+    with urllib.request.urlopen(req, timeout=15, context=ctx) as r, open(path, "wb") as f:
         while True:
             chunk = r.read(1 << 20)
             if not chunk:
@@ -156,7 +152,6 @@ def fetch(url, cache_name, binary=True):
             f.write(chunk)
     return path
 
-# ---------- FECHAS ----------
 _XMLTV_RE = re.compile(r"^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(?:\s*([+-])(\d{2})(\d{2}))?")
 def parse_date_ms(v):
     if v is None:
@@ -185,7 +180,6 @@ def parse_date_ms(v):
     except Exception:
         return None
 
-# ---------- PLAYLIST ----------
 def _parse_m3u(path):
     chans = []
     txt = open(path, "r", encoding="utf-8", errors="replace").read()
@@ -201,8 +195,6 @@ def _parse_m3u(path):
     return chans
 
 def cargar_playlists():
-    """Descarga y combina todas las listas de PLAYLIST_URLS (principal + VIP).
-    De-duplica por nombre normalizado para no contar un canal dos veces."""
     chans = []
     vistos = set()
     for i, url in enumerate(PLAYLIST_URLS):
@@ -219,13 +211,11 @@ def cargar_playlists():
             chans.append(c)
     return chans
 
-# ---------- LIMPIEZA DE TEXTO ----------
 def limpiar(txt):
     s = str(txt or "")
     s = html.unescape(html.unescape(s))
     return s.strip()
 
-# ---------- INDICE DE FUENTES ----------
 def add_prog(index, keys, s, e, t, d):
     t = limpiar(t)
     if not keys or s is None or e is None or e <= s or not t:
@@ -296,20 +286,19 @@ def _intv_fetch(slug):
     for intento in range(4):
         url = INTV_BASE.format(slug=slug, ts=int(time.time() * 1000) + intento)
         req = urllib.request.Request(url, headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                          "(KHTML, like Gecko) Chrome/124 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
             "Accept-Language": "es-CO,es;q=0.9",
             "Cache-Control": "no-cache",
         })
         try:
-            with urllib.request.urlopen(req, timeout=60, context=ctx) as r:
+            with urllib.request.urlopen(req, timeout=15, context=ctx) as r:
                 last = r.read().decode("utf-8", "replace")
         except Exception:
-            time.sleep(0.5)
+            time.sleep(0.3)
             continue
         if _INTV_ROW.search(last):
             return last
-        time.sleep(0.5)
+        time.sleep(0.3)
     return last
 
 _INTV_ROW = re.compile(r'<tr class="intv-program-row"([^>]*)>')
@@ -354,12 +343,9 @@ def parse_intv(index, need_keys):
             n_pr += 1
     log(f"    intv.com.co: {n_ch} canales cruzados, {n_pr} programas")
 
-# ---------- FUENTE VIDEOSTREAMING (KIKEFLIX CINE) ----------
 def parse_videostreaming(index, need_keys):
-    """Extrae la guia real de window.VS_EPG para KikeFlix Cine (videostreaming.net)"""
     n_ch = 0
     n_pr = 0
-    
     keys = set()
     for aliases in VIDEOSTREAMING_MAP.values():
         for a in aliases:
@@ -380,7 +366,7 @@ def parse_videostreaming(index, need_keys):
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
         
-        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+        with urllib.request.urlopen(req, timeout=10, context=ctx) as r:
             html_content = r.read().decode("utf-8", "replace")
 
         match = re.search(r'window\.VS_EPG\s*=\s*(\{.*?\});', html_content, re.DOTALL)
@@ -393,12 +379,9 @@ def parse_videostreaming(index, need_keys):
         if not timeline:
             return
 
-        # Ajuste de zona horaria Colombia (UTC-5)
         tz_cot = timezone(timedelta(hours=-5))
-        now_cot = datetime.now(tz_cot)
-        today_str = now_cot.strftime("%Y-%m-%d")
+        base_date = datetime.now(tz_cot).date()
 
-        # Limpiar guia anterior para sobreescribir con la real
         for k in keys:
             index[k] = {}
 
@@ -409,15 +392,19 @@ def parse_videostreaming(index, need_keys):
             hasta_str = item.get("hasta") or "00:00"
 
             try:
-                dt_s = datetime.fromisoformat(f"{today_str}T{desde_str}:00-05:00")
-                dt_e = datetime.fromisoformat(f"{today_str}T{hasta_str}:00-05:00")
+                h_s, m_s = map(int, desde_str.split(":"))
+                h_e, m_e = map(int, hasta_str.split(":"))
+
+                dt_s = datetime(base_date.year, base_date.month, base_date.day, h_s, m_s, tzinfo=tz_cot)
+                
+                end_date = base_date
+                if h_e < h_s or (h_e == h_s and m_e <= m_s):
+                    end_date = base_date + timedelta(days=1)
+                
+                dt_e = datetime(end_date.year, end_date.month, end_date.day, h_e, m_e, tzinfo=tz_cot)
 
                 s_ms = int(dt_s.timestamp() * 1000)
                 e_ms = int(dt_e.timestamp() * 1000)
-
-                # Si cruza la medianoche (ej. 23:00 a 02:00)
-                if e_ms <= s_ms:
-                    e_ms += 24 * 3600 * 1000
 
                 sub_desc = f"Categoria: {item.get('key', '')}"
                 add_prog(index, keys, s_ms, e_ms, nombre, sub_desc)
@@ -430,7 +417,6 @@ def parse_videostreaming(index, need_keys):
     except Exception as ex:
         log("    AVISO videostreaming.net fallo:", ex)
 
-# ---------- MAIN ----------
 def main():
     log("[1/6] Playlists (TV principal + VIP)...")
     canales = cargar_playlists()
@@ -468,7 +454,7 @@ def main():
     except Exception as ex:
         log("    AVISO videostreaming.net fallo:", ex)
 
-  log("[6/6] Recortando ventana temporal y escribiendo salida...")
+    log("[6/6] Recortando ventana temporal y escribiendo salida...")
     now = int(time.time() * 1000)
     lo = now - WIN_PAST_H * 3600_000
     hi = now + WIN_FUTURE_H * 3600_000
@@ -478,11 +464,10 @@ def main():
         progs = [p for p in bucket.values() if p["e"] > lo and p["s"] < hi]
         progs.sort(key=lambda p: p["s"])
         
-        # Si es tu canal KikeFlix, guardar el actual y los siguientes 3 programas seguros (hasta las 12)
+        # Si es tu canal KikeFlix, conservar varios programas para mostrar el actual y los siguientes
         if "kikeflix" in k:
-            progs = progs[:5]  # Muestra el actual y los próximos 4 bloques del día
+            progs = progs[:5]
         else:
-            # Recorte normal para los demás canales de la lista
             futuros = [p for p in progs if p["e"] > now]
             actuales = [p for p in progs if p["e"] <= now]
             progs = (actuales[-1:] if actuales else []) + futuros
